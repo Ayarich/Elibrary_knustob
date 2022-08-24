@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-link{
+        @apply  md:text-base my-1  leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-300/5 rounded-md px-2 py-2 md:mx-4 flex md:my-0
+    }
+    .sub-nav{
+        @apply mx-4 text-sm md:text-base leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400  flex  hover:border-b md:my-0 font-semibold text-opacity-80
+    }
+    
+}
