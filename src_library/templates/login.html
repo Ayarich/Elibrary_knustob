@@ -2968,24 +2968,24 @@ p{
 }
 
 </style>  -->
-{% compress css %}
+<!-- {% compress css %} -->
 <link rel="stylesheet" href="../../static/css/outputnew.css">
-{% endcompress %}
+<!-- {% endcompress %} -->
     </head>
-  <body class="dark:bg-gray-800 bg-gray-100">
+  <body class="dark:bg-gray-800 bg-gray-100 bg-center bg-no-repeat bg-cover" style="background-image: url('https://source.unsplash.com/1600x900/?education');">
     
     
 <!-- Section 1 -->
-<section class="w-full px-8 py-16  dark:bg-gray-800 bg-gray-100 xl:px-8">
+<section class="w-full px-8 py-16  dark:bg-gray-800/80 backdrop-blur-sm bg-gray-900/5 md:h-screen xl:px-8">
     <div class="max-w-5xl mx-auto">
         <div class="flex flex-col items-center md:flex-row">
 
             <div class="w-full space-y-5 md:w-3/5 md:pr-16">
-                <p class="font-medium text-emerald-500 uppercase">E-Library</p>
-                <h2 class="text-2xl font-extrabold leading-none dark:text-white text-black sm:text-3xl md:text-5xl">
+                <p class="font-medium tracking-widest text-emerald-500 uppercase">E-Library</p>
+                <h2 class="text-2xl font-extrabold leading-none dark:text-white text-white sm:text-3xl md:text-5xl">
                     Providing you the best books.
                 </h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 md:pr-16">Learn,re-learn and unlearn with E-Library.</p>
+                <p class="text-xl text-gray-300 dark:text-gray-300 md:pr-16">Learn,re-learn and unlearn with E-Library.</p>
             </div>
 
             <div class="w-full mt-16 md:mt-0 md:w-2/5">
@@ -3041,14 +3041,14 @@ p{
                   </div>
                   
 
-              <div class="mt-4 dark:text-gray-400">
-                <div class="flex justify-center links">
+              <div class="mt-4 dark:text-gray-400 text-sm">
+                <div class="flex justify-center ">
                   Don't have an account?
-                  <a href="/register/" class="ml-2 px-1.5 rounded-sm hover:transition-all hover:text-emerald-700 hover:bg-emerald-300">Sign Up</a>
+                  <a href="/register/" class="ml-2  hover:transition-all font-medium text-emerald-500 ">Sign Up</a>
                 </div>
-                <div class="flex justify-center links">
+                <div class="flex justify-center ">
                   Forgot password?
-                  <a href="/reset_password/" class="ml-2"
+                  <a href="/reset_password/" class="ml-2 text-red-300"
                     >Reset password</a
                   >
                 </div>
