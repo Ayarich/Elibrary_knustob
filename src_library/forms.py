@@ -2,7 +2,11 @@ from django import forms
 from .models import BookSearch
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.forms import ModelForm
+from django import forms
 
+
+from .models import *
 class BookSearchForm(forms.ModelForm):
     name_of_book = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
         'class': "form-control me-2", 'placeholder': 'Enter name of book'
@@ -29,3 +33,16 @@ class CreateUserForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
+
+
+class StudentForm(ModelForm):
+	class Meta:
+		model = Student
+		fields = '__all__'
+		exclude = ['user']
+
+
+class CreateUserForm(UserCreationForm):
+	class Meta:
+		model = User
+		fields = ['username', 'email', 'password1', 'password2']

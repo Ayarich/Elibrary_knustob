@@ -1,30 +1,26 @@
 
 from datetime import datetime
-from fileinput import filename
 from http.client import HTTPResponse
 
-import os
-from urllib import response
 
-from django.core.files.storage import FileSystemStorage
-from django.http import HttpResponse, HttpResponseNotFound
 
 
 from django.shortcuts import render, redirect
 import tempfile
+
+from src_library.decorators import unauthenticated_user
 from .models import Book, Category, Video
-from django.contrib.auth.forms import UserCreationForm
+
 from  .forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from weasyprint import HTML
 import datetime
-from django.core.paginator import Paginator
+
 from .models import Book
-from django.db.models import Sum
-import json
-from django.http import JsonResponse, HttpResponse
+
+
 
 
 # Create your views here.
@@ -126,3 +122,44 @@ def download(request):
 
 
 
+
+def registerPage(request):
+
+    form = CreateUserForm()
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            username = form.cleaned_data.get('username')
+
+            messages.success(request, 'Account was created for ' + username)
+
+            return redirect('login')
+
+    context = {'form': form}
+    return render(request, 'src_library/register.html', context)
+
+
+
+@unauthenticated_user
+def loginPage(request):
+
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return redirect('welcome')
+        else:
+            messages.info(request, 'Username OR password is incorrect')
+
+    context = {}
+    return render(request, 'src_library/login.html', context)
+
+
+def logoutUser(request):
+    logout(request)
+    return redirect('login')

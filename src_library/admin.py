@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Video
+from .models import Student, Video
 from .models import Category, Book, BookSearch
 from embed_video.admin import AdminVideoMixin
 # Register your models here.
@@ -12,6 +12,7 @@ class AdminVideo(AdminVideoMixin, admin.ModelAdmin):
 class BookAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
+admin.site.register(Student)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Book, BookAdmin)
 admin.site.register(BookSearch)
