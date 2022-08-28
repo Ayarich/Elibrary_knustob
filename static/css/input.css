@@ -25,6 +25,9 @@
       .three-dots{
         @apply w-5 h-5 rounded-full
       }
+      .slide_image{
+        @apply block w-full h-full object-cover object-center filter saturate-0
+      }
       
     
      
