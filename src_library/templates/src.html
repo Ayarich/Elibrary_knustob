@@ -1,0 +1,478 @@
+
+<!Doctype html>
+<html class="scroll-smooth " lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+  <link rel="stylesheet" href="../../static/css/output.css">
+  <script src="../../static/js/darkmode.js" defer></script>
+  <style>
+    html,
+    body {
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      scrollbar-width: none;
+      -ms-overflow-style: none
+    }
+
+    body::-webkit-scrollbar {
+      display: none
+    }
+
+    ::-moz-selection {
+      color: white;
+      background: #10b981
+    }
+
+    ::selection {
+      color: white;
+      background: #10b981
+    }
+    .scroll-hidden::-webkit-scrollbar {
+      height: 0px;
+      background: transparent;
+      /* make scrollbar transparent */
+    }
+  </style>
+  <title>HOME</title>
+</head>
+
+<body class="bg-black duration-500">
+  <!-- --------------------Nav Bar---------------------- -->
+<header class="h-screen">
+  <nav class="bg-yellow-500/50 backdrop-blur-sm px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-[1000] top-0 left-0 border-b border-gray-500">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="#" class="flex items-center">
+        <img src="../../static/img/src.png" class="mr-2 h-10 sm:h-9" alt="KNUST OBUASI SRC Logo">
+        <span class="self-center text-sm font-extrabold whitespace-nowrap text-white">KNUST SRC - OB</span>
+    </a>
+    <div class="flex md:order-2">
+        <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Sign In</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+    <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#home" class="block py-2 pr-4 pl-3 text-white bg-yellow-700 rounded md:bg-transparent md:text-yellow-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#welcome" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        </li>
+        <li>
+          <a href="#vision" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+ 
+<div id="home" class=" relative h-full overflow-hidden bg-no-repeat bg-cover" style="
+    background-position: 50%;
+    background-image: url('../../static/img/obuasi.png');
+    
+  ">
+  <div id="carouselExampleCaptions" class=" carousel slide carousel-fade relative h-full" data-bs-ride="carousel">
+    
+    <div class="carousel-inner absolute w-full  h-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full h-full">
+        <img
+          src="https://source.unsplash.com/1600x900/?education"
+          class="slide_image"
+          alt="..."
+        />
+      
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://source.unsplash.com/1600x900/?education"
+          class="block w-full filter saturate-0"
+          alt="..."
+        />
+       
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://source.unsplash.com/1600x900/?education"
+          class="block w-full filter saturate-0"
+          alt="..."
+        />
+        
+      </div>
+    </div>
+  
+  </div>
+
+    <div class="z-10 px-4 absolute top-0 right-0 bottom-0 left-0 w-full h-auto overflow-hidden bg-fixed"
+      style="background-color: rgba(0, 0, 0, 0.75)">
+      <div class="container flex justify-center items-center h-full">
+        <div class="  text-center text-white px-6 md:px-12 flex items-center flex-col ">
+        
+          <!-- KNUST SRC LOGO CONTAINER -->
+          <div class="w-full justify-center flex items-center"> 
+            <img src="../../static/img/src.png" alt="" class=" h-20 md:h-24 lg:h-32 ">
+         </div>
+         <!--  END OF  KNUST SRC LOGO CONTAINER -->
+
+         <!-- HERO TEXT -->
+          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold mb-4">KNUST</h3>
+          <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mt-0 mb-6 text-yellow-400">STUDENTS' <br> REPRESENTATIVE COUNCIL</h1>
+         
+
+            <!-- CAMPUS TEXT CONTAINER -->
+          <div class="relative   mt-2 w-full flex justify-center items-center">
+            <h3 class="text-base  p-3 md:p-0 md:text-lg lg:text-xl font-thin z-10  text-white">OBUASI CAMPUS</h3>
+            <span class="bg-gray-50/50 absolute w-1/4  h-[.01rem] left-0"></span>
+            <span class="bg-gray-50/50 absolute w-1/4 h-[.01rem] right-0"></span>
+          </div>
+           <!-- END OF CAMPUS TEXT CONTAINER -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ===================================== END OF NAVIGATION -->
+<!-- --------------------END OF CAROUSEL -->
+<main class="mt-20 flex flex-col gap-y-44 px-4 md:px-10">
+  
+
+<!-- Welcome section -->
+<section id="welcome" class=" mb-20 py-14 ">
+  <div class="flex gap-10  lg:flex-row flex-col">
+
+    <!-- left side -->
+    <div class="mb-20 lg:md-0 w-full  lg:w-2/3 p-4 md:p-10 flex flex-col space-y-10">
+      <!-- 3 dots container -->
+      <div class="flex space-x-3 ">
+        <span class="three-dots bg-green-500"></span>
+        <span class="three-dots bg-red-500"></span>
+        <span class="three-dots bg-yellow-400"></span>
+      </div>
+      <!-- end of three dots -->
+
+
+      <!-- WELOME TEXT -->
+      <div class="">
+        <h1 class="md:text-5xl text-4xl lg:text-7xl font-extrabold tracking-wide text-white mb-10">Welcome to our Campus</h1>
+        <p class=" max-w-lg text-sm text-gray-300 font-mono">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, corrupti architecto. Corrupti, voluptate? Fugit quod at quia excepturi dolorem illum, quo labore odio praesentium expedita adipisci itaque earum laudantium sunt.</p>
+      </div>
+
+
+      <!-- END OF WELCOME TEXT -->
+
+      <!-- BUTTON -->
+      <div class="mt-20">
+        <a href="" class="continue_btn ">
+          continue
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right side -->
+    <div class="  w-full lg:w-2/3 md:h-full relative">
+      <div class="relative  shadow-md">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade relative" data-bs-ride="carousel">
+          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner relative w-full overflow-hidden">
+            <div class="carousel-item active relative float-left w-full">
+              <img
+                src="https://source.unsplash.com/1600x900/?education"
+                class="block w-full filter saturate-0"
+                alt="..."
+              />
+              <div class="carousel-caption hidden md:block absolute text-center">
+                <h5 class="text-xl">First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="https://source.unsplash.com/1600x900/?education"
+                class="block w-full filter saturate-0"
+                alt="..."
+              />
+              <div class="carousel-caption hidden md:block absolute text-center">
+                <h5 class="text-xl">Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="https://source.unsplash.com/1600x900/?education"
+                class="block w-full filter saturate-0"
+                alt="..."
+              />
+              <div class="carousel-caption hidden md:block absolute text-center">
+                <h5 class="text-xl">Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <img src="../../static/img/obuasi.png" alt="" class=" h-44 md:h-96  w-full object-cover object-center z-10"> -->
+        <div class="backdrop-blur-md bg-black/80 lg:absolute py-8 px-5  border border-yellow-400  w-full bottom-0">
+          <p class="text-white/90 text-center font-mono ">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, molestias odio! Ut quod iste impedit placeat neque? Consequatur aliquid laborum dolore, at, quaerat aut perferendis, nulla iusto quas inventore corrupti!
+          </p>
+        </div>
+      </div>
+      <span class="hidden md:flex border border-emerald-400 h-3/5 w-2/6  -z-10 -right-10 absolute -top-10 "></span>
+    </div>
+  </div>
+</section>
+<!-- End Welcome section -->
+
+
+
+<!-- Vision -->
+<section id="vision" class=" mt-20 top-10 relative  py-14 ">
+  <div class="flex gap-10  lg:flex-row flex-col">
+
+    <!-- left side -->
+    <div class="order-2 mb-20 lg:ml-0 w-full  lg:w-2/3 md:pl-10 flex flex-col space-y-10 md:items-end">
+      <!-- 3 dots container -->
+      <div class="flex space-x-3 ">
+        <span class="three-dots bg-green-500"></span>
+        <span class="three-dots bg-red-500"></span>
+        <span class="three-dots bg-yellow-400"></span>
+      </div>
+      <!-- end of three dots -->
+
+
+      <!-- Vision TEXT -->
+      <div class="mx-auto lg:ml-auto">
+        <h1 class="text-center md:text-5xl text-4xl lg:text-7xl font-extrabold tracking-wide text-white mb-10 md:text-right">Our vison & Mission</h1>
+        <p class="lg:ml-auto max-w-lg text-sm text-gray-300 font-mono text-center md:text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, corrupti architecto. Corrupti, voluptate? Fugit quod at quia excepturi dolorem illum, quo labore odio praesentium expedita adipisci itaque earum laudantium sunt.</p>
+      </div>
+
+
+      <!-- END OF WELCOME TEXT -->
+
+
+      <!-- BUTTON -->
+      <div class="mt-20">
+        <a href="" class="continue_btn inline-block w-full text-center">
+          continue
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right side -->
+    <div class=" order-1 w-full lg:w-2/3 h-full relative">
+      <div class="relative overflow-hidden shadow-md">
+        <!-- <img src="https://source.unsplash.com/1600x900/?education" alt="campus" class="h-44 md:h-96  w-full object-cover object-center z-10 filter saturate-0"> -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade relative" data-bs-ride="carousel">
+          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner relative w-full overflow-hidden">
+            <div class="carousel-item active relative float-left w-full">
+              <img
+                src="https://source.unsplash.com/1600x900/?education"
+                class="block w-full filter saturate-0"
+                alt="..."
+              />
+              <div class="carousel-caption hidden md:block absolute text-center">
+                <h5 class="text-xl">First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="https://source.unsplash.com/1600x900/?education"
+                class="block w-full filter saturate-0"
+                alt="..."
+              />
+              <div class="carousel-caption hidden md:block absolute text-center">
+                <h5 class="text-xl">Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+              <img
+                src="https://source.unsplash.com/1600x900/?education"
+                class="block w-full filter saturate-0"
+                alt="..."
+              />
+              <div class="carousel-caption hidden md:block absolute text-center">
+                <h5 class="text-xl">Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <span class="md:flex hidden h-3/5 w-2/6 bg-yellow-400 -z-10 -right-10 absolute -top-10 "></span>
+      <span class="md:flex hidden h-3/5 w-2/6 bg-yellow-400 -z-10 -left-10 absolute -bottom-10 "></span>
+    </div>
+  </div>
+</section>
+<!-- -----------------CAROUSEL CONTAINER----------------------- -->
+ 
+
+ 
+  
+
+
+
+</main>
+
+
+  <script type="text/javascript">
+    let h = document.documentElement, b = document.body, st = "scrollTop", sh = "scrollHeight", progress = document.querySelector("#progress"), scroll; let scrollpos = window.scrollY; let header = document.getElementById("header"); let navcontent = document.getElementById("nav-content"); document.addEventListener("scroll", function () { scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100; progress.style.setProperty("--scroll", scroll + "%"); scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); header.classList.add("shadow-xl"); navcontent.classList.remove("bg-gray-50"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); header.classList.remove("shadow-xl"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-50") } });
+
+  </script>
+  <!-- dark mode -->
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  
+    var themeToggleDarkIcon1 = document.getElementById('theme-toggle-dark-icon1');
+    
+    var themeToggleLightIcon1 = document.getElementById('theme-toggle-light-icon1');
+
+    // Change the icons inside the button based on previous settings
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      themeToggleLightIcon1.classList.remove('hidden');
+    } else {
+      themeToggleDarkIcon1.classList.remove('hidden');
+    }
+
+    var themeToggleBtn1 = document.getElementById('theme-toggle1');
+
+    themeToggleBtn1.addEventListener('click', function () {
+
+      // toggle icons inside button
+      themeToggleDarkIcon1.classList.toggle('hidden');
+      themeToggleLightIcon1.classList.toggle('hidden');
+
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      }
+
+    });
+  </script>
+  <!-- Flowbite component -->
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  
+  <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
