@@ -33,7 +33,7 @@
       @apply absolute inline-block top-2 right-2 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-1 px-1 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-500 text-white rounded-full z-10
     }
     .src_nav_item{
-      @apply block py-2 pr-2 pl-2 text-slate-700 md:text-slate-200 rounded hover:bg-yellow-100 md:hover:bg-transparent hover:text-yellow-700 md:p-0 md:hover:bg-yellow-100 md:px-2 md:py-1 font-bold duration-300 text-xs md:text-sm lg:text-base
+      @apply block py-2 pr-2 pl-2 text-slate-700 md:text-slate-200 rounded hover:bg-yellow-100/50  hover:text-yellow-700 md:p-0 md:hover:bg-yellow-100/90  md:px-2 md:py-1 font-bold duration-300 text-xs md:text-sm lg:text-base
     }
     .nav_bar{
       @apply bg-slate-900/80  backdrop-blur-2xl px-2 sm:px-4 py-2.5  fixed w-full z-[1000] top-0 left-0 border-b border-gray-500
@@ -45,7 +45,7 @@
       @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide text-white mb-4 md:text-right
      }
      .src_heading_title{
-      @apply text-4xl md:text-5xl lg:text-7xl font-serif font-extrabold mt-0 mb-6 text-yellow-400 uppercase
+      @apply text-4xl md:text-5xl lg:text-7xl tracking-wider font-serif font-extrabold mt-0 mb-6 text-yellow-400 uppercase
      }
 }
 
