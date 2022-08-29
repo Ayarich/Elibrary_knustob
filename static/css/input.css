@@ -39,10 +39,10 @@
       @apply bg-slate-900/80  backdrop-blur-2xl px-2 sm:px-4 py-2.5  fixed w-full z-[1000] top-0 left-0 border-b border-gray-500
     }
      .src_executive_image{
-      @apply aspect-square md:h-96  w-full object-cover object-center z-10 filter saturate-0
+      @apply aspect-square md:h-96  w-full object-cover object-center z-10 filter saturate-0 shadow-xl shadow-gray-900 hover:saturate-100 duration-300
      }
      .executive_name{
-      @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide text-white mb-10 md:text-right
+      @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide text-white mb-4 md:text-right
      }
 }
 
