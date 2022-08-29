@@ -35,7 +35,7 @@
   </style>
 </head>
 
-<body class=" dark:bg-gray-900 duration-500 bg-gray-50 font-Poppins">
+<body class=" dark:bg-gray-900 duration-500 bg-gray-100 font-Poppins">
 
 
 
@@ -67,16 +67,10 @@
             <!-- Search input on desktop screen -->
             <div class="hidden mx-10 md:block">
               <div class="relative">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                
 
                 <input type="text"
-                  class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                  class="w-full py-2 pl-10 pr-10 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
                   placeholder="Search">
               </div>
             </div>
@@ -167,7 +161,7 @@
         </div>
       </div>
 
-      <div :class="{'flex': open, 'hidden': !open}"
+      <div :class="{'flex': open, 'hidden': !open} "
         class="py-3 mt-3 -mx-3 overflow-y-auto whitespace-nowrap scroll-hidden md:flex justify-center ">
         <a class="mx-4 text-sm leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0"
           href="{% url 'news' %}?category=Business">Business</a>
@@ -226,7 +220,7 @@
 
 
   <h1
-    class="font-sans font-bold text-2xl md:text-3xl lg:text-5xl 2xl:text-7xl leading-none  mb-4 text-center text-green-500">
+    class="font-sans font-bold text-2xl md:text-3xl  hidden lg:text-5xl 2xl:text-7xl leading-none  mb-4 text-center text-green-500 mt-64">
     Top Headlines
   </h1>
 
@@ -236,7 +230,7 @@
 
     <!--News Container/Wrapper -->
     <div
-      class="max-w-sm mx-auto place-items-center md:max-w-2xl  lg:max-w-6xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 ">
+      class="max-w-sm mx-auto place-items-center hidden md:max-w-2xl  lg:max-w-6xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 ">
       {% for i in articles %}
       <!-- News Cards -->
       <div class="w-80 ">
@@ -282,6 +276,74 @@
       <!-- {% endfor %} -->
 
     </div>
+
+  <main class=" grid  sm:space-x-0 md:space-x-4 sm:justify-center mx-10   grid-cols-1 md:grid-cols-2 md:mx-6 lg:grid-cols-3 md:space-x-3" >
+
+    
+    <div class="max-w-sm p-6 bg-white rounded-lg border gap  mt-6 border-gray-200 shadow hover:shadow-2xl transition-shadow  dark:bg-gray-800 dark:border-gray-700 ">
+      <a href="#">
+          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
+      </a>
+      <div class="pt-6">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+      </div>
+    </div>
+
+    <div class="max-w-sm p-6 bg-white rounded-lg border  mt-6 border-gray-200 shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
+      <a href="#">
+          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
+      </a>
+      <div class="pt-6">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+      </div>
+    </div>
+
+    <div class="max-w-sm p-6 bg-white rounded-lg border  mt-6 border-gray-200 shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
+      <a href="#">
+          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
+      </a>
+      <div class="pt-6">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+      </div>
+    </div>
+
+    <div class="max-w-sm p-6 bg-white rounded-lg border  mt-6 border-gray-200 shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
+      <a href="#">
+          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
+      </a>
+      <div class="pt-6">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+      </div>
+    </div>
+  </main>       
 
 
 
