@@ -1145,6 +1145,55 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.src_nav_item {
+  display: block;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 0.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.src_nav_item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 246 178 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(142 75 16 / var(--tw-text-opacity));
+}
+
+.dark .src_nav_item {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.dark .src_nav_item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .src_nav_item {
+    padding: 0px;
+  }
+
+  .src_nav_item:hover {
+    background-color: transparent;
+  }
+
+  .dark .src_nav_item:hover {
+    background-color: transparent;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1450,6 +1499,17 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 0.25rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+>>>>>>> Stashed changes
 .block {
   display: block;
 }
@@ -1530,6 +1590,7 @@ input[type="range"]::-ms-fill-lower {
   height: 60%;
 }
 
+<<<<<<< Updated upstream
 .h-8 {
   height: 2rem;
 }
@@ -1554,6 +1615,8 @@ input[type="range"]::-ms-fill-lower {
   height: 4rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .w-full {
   width: 100%;
 }
@@ -1578,6 +1641,10 @@ input[type="range"]::-ms-fill-lower {
   width: 50%;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -1586,6 +1653,7 @@ input[type="range"]::-ms-fill-lower {
   width: 33.333333%;
 }
 
+<<<<<<< Updated upstream
 .w-48 {
   width: 12rem;
 }
@@ -1602,6 +1670,8 @@ input[type="range"]::-ms-fill-lower {
   width: 11rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .min-w-0 {
   min-width: 0px;
 }
@@ -1763,7 +1833,17 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+<<<<<<< Updated upstream
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+=======
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+>>>>>>> Stashed changes
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
@@ -1940,13 +2020,22 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(63 131 248 / var(--tw-bg-opacity));
 }
 
+<<<<<<< Updated upstream
 .bg-yellow-500\/50 {
   background-color: rgb(194 120 3 / 0.5);
+=======
+.bg-emerald-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(142 75 16 / var(--tw-bg-opacity));
+.bg-gray-100\/30 {
+  background-color: rgb(243 244 246 / 0.3);
+>>>>>>> Stashed changes
+}
+
+.bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9);
 }
 
 .bg-gray-50\/50 {
@@ -1977,6 +2066,7 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
 }
 
+<<<<<<< Updated upstream
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
@@ -2025,6 +2115,8 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(194 120 3 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> Stashed changes
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -2424,7 +2516,16 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+<<<<<<< Updated upstream
 .text-blue-500 {
+=======
+.text-yellow-700 {
+  --tw-text-opacity: 1;
+  color: rgb(142 75 16 / var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+>>>>>>> Stashed changes
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
 }
@@ -2641,9 +2742,9 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(28 100 242 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-yellow-800:hover {
+.hover\:bg-yellow-100:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(114 59 19 / var(--tw-bg-opacity));
+  background-color: rgb(253 246 178 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-800:hover {
@@ -2651,6 +2752,7 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
 }
 
+<<<<<<< Updated upstream
 .hover\:bg-emerald-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(52 211 153 / var(--tw-bg-opacity));
@@ -2661,6 +2763,8 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(159 88 10 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> Stashed changes
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -2833,6 +2937,7 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+<<<<<<< Updated upstream
 .dark .dark\:bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(159 88 10 / var(--tw-bg-opacity));
@@ -2843,6 +2948,8 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(28 100 242 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> Stashed changes
 .dark .dark\:bg-gray-800\/80 {
   background-color: rgb(31 41 55 / 0.8);
 }
@@ -2912,6 +3019,7 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+<<<<<<< Updated upstream
 .dark .dark\:hover\:bg-yellow-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(142 75 16 / var(--tw-bg-opacity));
@@ -2927,6 +3035,8 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> Stashed changes
 .dark .dark\:hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -2977,6 +3087,7 @@ input[type="range"]::-ms-fill-lower {
   --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
 
+<<<<<<< Updated upstream
 .dark .dark\:focus\:ring-yellow-800:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(114 59 19 / var(--tw-ring-opacity));
@@ -2987,6 +3098,8 @@ input[type="range"]::-ms-fill-lower {
   --tw-ring-color: rgb(30 66 159 / var(--tw-ring-opacity));
 }
 
+=======
+>>>>>>> Stashed changes
 @media (min-width: 640px) {
   .sm\:mx-auto {
     margin-left: auto;
@@ -3297,6 +3410,7 @@ input[type="range"]::-ms-fill-lower {
     color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
+<<<<<<< Updated upstream
   .md\:text-yellow-700 {
     --tw-text-opacity: 1;
     color: rgb(142 75 16 / var(--tw-text-opacity));
@@ -3307,6 +3421,8 @@ input[type="range"]::-ms-fill-lower {
     color: rgb(26 86 219 / var(--tw-text-opacity));
   }
 
+=======
+>>>>>>> Stashed changes
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -3316,6 +3432,7 @@ input[type="range"]::-ms-fill-lower {
     color: rgb(17 24 39 / var(--tw-text-opacity));
   }
 
+<<<<<<< Updated upstream
   .md\:hover\:text-yellow-700:hover {
     --tw-text-opacity: 1;
     color: rgb(142 75 16 / var(--tw-text-opacity));
@@ -3326,6 +3443,8 @@ input[type="range"]::-ms-fill-lower {
     color: rgb(26 86 219 / var(--tw-text-opacity));
   }
 
+=======
+>>>>>>> Stashed changes
   .dark .md\:dark\:bg-gray-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));

@@ -32,6 +32,9 @@
     .notification_on{
       @apply absolute inline-block top-2 right-2 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-1 px-1 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-500 text-white rounded-full z-10
     }
+    .src_nav_item{
+      @apply block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-yellow-100 md:hover:bg-transparent font-medium hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+    }
      
 }
 
