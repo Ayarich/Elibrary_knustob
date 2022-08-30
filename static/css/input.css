@@ -23,7 +23,7 @@
         @apply text-2xl font-semibold text-gray-800 dark:text-gray-200;
       }
       .three-dots{
-        @apply w-5 h-5 rounded-full
+        @apply w-5 h-5 rounded-full 2xl:w-10 2xl:h-10
       }
       .slide_image{
         @apply block w-full h-full object-cover object-center filter saturate-0
@@ -32,52 +32,26 @@
     .notification_on{
       @apply absolute inline-block top-2 right-2 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-1 px-1 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-500 text-white rounded-full z-10
     }
-     
+    .src_nav_item{
+      @apply block py-2 pr-2 pl-2 text-slate-600 md:text-slate-200 rounded hover:bg-yellow-100/50  hover:text-yellow-700 md:p-0 md:hover:bg-yellow-100/90  md:px-2 md:py-1 font-bold duration-300 text-sm lg:text-base
+    }
+    .nav_bar{
+      @apply bg-slate-900/80  backdrop-blur-2xl px-2 sm:px-4 py-2.5  fixed w-full z-[1000] top-0 left-0 border-b border-gray-500
+    }
+     .src_executive_image{
+      @apply aspect-square md:h-96  2xl:h-[30rem]  w-full object-cover object-center z-10 filter saturate-0 shadow-xl shadow-gray-900 hover:saturate-100 duration-300
+     }
+     .executive_name{
+      @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide text-white mb-4 md:text-right
+     }
+     .src_heading_title{
+      @apply text-4xl md:text-5xl lg:text-7xl tracking-wider font-serif font-extrabold mt-0 mb-6 text-yellow-400 uppercase
+     }
+     .notification_icon{
+      @apply inline-flex relative items-center p-2 text-sm text-gray-50 rounded-lg     focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600 hover:bg-yellow-50 hover:text-yellow-700 justify-between md:dark:hover:bg-transparent
+     }
 }
 
 
 
 
-
-:root {
-  --header-height: 3.5rem; /*56px*/
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 152;
-  --first-color: hsl(var(--hue), 24%, 32%);
-  --first-color-alt: hsl(var(--hue), 24%, 28%);
-  --first-color-light: hsl(var(--hue), 24%, 66%);
-  --first-color-lighten: hsl(var(--hue), 24%, 92%);
-  --title-color: hsl(var(--hue), 4%, 15%);
-  --text-color: hsl(var(--hue), 4%, 35%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: hsl(var(--hue), 0%, 100%);
-  --container-color: #FFF;
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-
-  
-
-  /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}

@@ -45,7 +45,7 @@
 <body class="bg-black duration-500">
   <!-- --------------------Nav Bar---------------------- -->
 <header class="h-screen">
-  <nav class="bg-gray-100/30 backdrop-blur-2xl px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-[1000] top-0 left-0 border-b border-gray-500">
+  <nav class="nav_bar">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a href="#" class="flex items-center">
         <img src="../../static/img/src.png" class="mr-2 h-10 sm:h-9" alt="KNUST OBUASI SRC Logo">
@@ -57,7 +57,7 @@
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
-        <button id="notification" data-dropdown-toggle="notication-icon" class="inline-flex relative items-center p-2 text-sm text-gray-50 rounded-lg     focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600  justify-between md:dark:hover:bg-transparent">
+        <button id="notification" data-dropdown-toggle="notication-icon" class="notification_icon">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
           </svg><div class="notification_on">12</div>
@@ -78,22 +78,26 @@
     </div>
     </div>
     <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="duration-500 flex flex-col  mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
         <li>
           <a href="#home" class="src_nav_item" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#welcome" class="src_nav_item">News</a>
+          <a href="./news.html" class="src_nav_item">News</a>
         </li>
         <li>
-          <a href="#vision" class="src_nav_item">Videos</a>
+          <a href="#vision" class="src_nav_item">Committees</a>
         </li>
         <li>
-          <a href="#vision" class="src_nav_item">Slideshub</a>
+          <a href="./members.html" class="src_nav_item">Executives</a>
         </li>
         <li>
-          <a href="#" class="src_nav_item">Executives</a>
+          <a href="#vision" target="_blank" class="src_nav_item">Slideshub</a>
         </li>
+        <li>
+          <a href="#vision" class="src_nav_item">Contact Us</a>
+        </li>
+       
       </ul>
     </div>
     </div>
@@ -147,8 +151,8 @@
          <!--  END OF  KNUST SRC LOGO CONTAINER -->
 
          <!-- HERO TEXT -->
-          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold mb-4">KNUST</h3>
-          <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mt-0 mb-6 text-yellow-400">STUDENTS' <br> REPRESENTATIVE COUNCIL</h1>
+          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold font-mono mb-4">KNUST</h3>
+          <h1 class="src_heading_title">STUDENTS' <br> REPRESENTATIVE COUNCIL</h1>
          
 
             <!-- CAMPUS TEXT CONTAINER -->
