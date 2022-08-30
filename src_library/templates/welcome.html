@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Library</title>
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../../static/css/output.css">   
-</head>
-<body class="m-0 p-0 box-border">    
-        <section class=" relative  w-full h-screen flex-col items-center duration-1000 flex justify-center">
-            <img src="../../static/img/libpic.jpg" muted autoplay loop class="absolute top-0 bottom-0 left-0 h-screen w-full object-cover"></img> 
-            <div class="overlay absolute  top-0 h-screen w-full  bg-gray-900/30 bg-blend-overlay"></div>
-            <!-- Welcome section -->
-            <div class="relative w-full p-5 h-screen  lg:h-96 flex flex-col flex-wrap items-center justify-center">
-                <h1 class="text-3xl lg:text-4xl text-center font-bold uppercase text-gray-100 xl:text-5xl mb-5">Welcome To</h1>
-                <h1 class="text-4xl text-center text-red-600 lg:text-7xl uppercase bg-gray-100 rounded-md font-extrabold md:p-4 p-2">E-LIBRARY</h1>
-                <!-- Link Button -->
-                   <div class=" text-center">
-                    
-                    <a href="/home" class="lg:text-center mt-16 text-sm uppercase tracking-widest leading-3 duration-100 ease-in hover:bg-red-500 bg-gray-100 text-red-500 hover:text-white p-2 font-bold inline-block text-xm sm:text-sm hover:shadow-red-500/40 hover:shadow-md rounded">Visit</a>
-                   </div>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../../static/src/outputnew.css">
+   
+<body>
+<section class="relative ">
+<div class="relative pt-16 pb-32 flex content-center items-center justify-center h-screen">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+            background-image: url('../../static/img/welcome_w.jpg');
+          ">
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full  px-4 ml-auto mr-auto text-center">
+              <div class="md:pr-12  mx-auto">
+                <h1 class="text-yellow-500 font-extrabold text-5xl lg:text-7xl">
+                  Welcome to KNUST-Obuasi Campus E-Library
+                </h1>
 
-                   <ul class="fixed bottom-5 w-full flex justify-center space-x-10">
-                    <li class="inline-block  transform   duration-500   rounded full   ">
-                        <a class="text-xl flex items-center justify-center text-white  hover:bg-sky-400  rounded-full w-10 h-10" href=""><i class="  fab fa-twitter"></i></a>
-                    </li>
-                    <li class="inline-block  transform   duration-500  rounded full   ">
-                        <a class="text-xl flex items-center justify-center text-white hover:bg-blue-500 rounded-full
-                        w-10 h-10" href=""><i class="  fab fa-facebook-f"></i></a>
-                    </li>
-                    
-                    <li class="inline-block  transform duration-500  rounded full   ">
-                        <a class="text-xl flex items-center justify-center text-white hover:bg-emerald-500 rounded-full w-10 h-10"  href=""><i class=" fab fa-whatsapp"></i></a>
-                    </li>
-                </ul>
-            </div>  
-        </section>
+                <p class="mt-4 text-lg  max-w-xl text-white mx-auto">
+                lorem ipsum dolor sit amet consectetur adipisicing elit.
+                lorem ipsum dolor sit amet consectetur adipisicing elit.
+                lorem ipsum dolor sit amet consectetur adipisicing elit.
+               
+                </p>
+                <!-- COntinue Button -->
+                <div class="mt-6">
+                  <a href="#" class="text-white bg-yellow-500 hover:bg-yellow-600 rounded-lg px-5 py-3 text-lg">
+                    Get Started
+                  </a>
+                 
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        
+</div>
+  
+</section>
+   
 </body>
+
 </html>

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 @layer components{
     .nav-link{
         @apply text-sm lg:text-base my-1  leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-300/5 rounded-md px-2 py-2 md:mx-4 flex items-center  md:my-0
@@ -9,5 +12,72 @@
     .sub-nav{
         @apply mx-4 text-sm lg:text-base leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400  flex  hover:border-b md:my-0 font-semibold text-opacity-80
     }
-    
+    .continue_btn{
+      @apply text-yellow-100 bg-yellow-400 hover:bg-yellow-600 rounded-lg px-5 py-3 text-lg
+    }
+    .section{
+      @apply pt-[5.5rem] px-0 pb-4;
+      }
+      
+      .section-title{
+        @apply text-2xl font-semibold text-gray-800 dark:text-gray-200;
+      }
+      .three-dots{
+        @apply w-5 h-5 rounded-full
+      }
+      .slide_image{
+        @apply block w-full h-full object-cover object-center filter saturate-0
+      }
+      
+    .notification_on{
+      @apply absolute inline-block top-2 right-2 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-1 px-1 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-500 text-white rounded-full z-10
+    }
+     
+}
+
+
+
+
+
+:root {
+  --header-height: 3.5rem; /*56px*/
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --hue: 152;
+  --first-color: hsl(var(--hue), 24%, 32%);
+  --first-color-alt: hsl(var(--hue), 24%, 28%);
+  --first-color-light: hsl(var(--hue), 24%, 66%);
+  --first-color-lighten: hsl(var(--hue), 24%, 92%);
+  --title-color: hsl(var(--hue), 4%, 15%);
+  --text-color: hsl(var(--hue), 4%, 35%);
+  --text-color-light: hsl(var(--hue), 4%, 55%);
+  --body-color: hsl(var(--hue), 0%, 100%);
+  --container-color: #FFF;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  
+
+  /*========== Margenes Bottom ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }

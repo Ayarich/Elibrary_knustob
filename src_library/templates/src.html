@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
-  <link rel="stylesheet" href="../../static/css/output.css">
+  <link rel="stylesheet" href="../../static/src/output.css">
   <script src="../../static/js/darkmode.js" defer></script>
   <style>
     html,
@@ -45,32 +45,54 @@
 <body class="bg-black duration-500">
   <!-- --------------------Nav Bar---------------------- -->
 <header class="h-screen">
-  <nav class="bg-yellow-500/50 backdrop-blur-sm px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-[1000] top-0 left-0 border-b border-gray-500">
+  <nav class="bg-gray-100/30 backdrop-blur-2xl px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-[1000] top-0 left-0 border-b border-gray-500">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a href="#" class="flex items-center">
         <img src="../../static/img/src.png" class="mr-2 h-10 sm:h-9" alt="KNUST OBUASI SRC Logo">
         <span class="self-center text-sm font-extrabold whitespace-nowrap text-white">KNUST SRC - OB</span>
     </a>
     <div class="flex md:order-2">
-        <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Sign In</button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm hover:text-gray-600 text-gray-50 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
+        <button id="notification" data-dropdown-toggle="notication-icon" class="inline-flex relative items-center p-2 text-sm text-gray-50 rounded-lg     focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600  justify-between md:dark:hover:bg-transparent">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+          </svg><div class="notification_on">12</div>
+        </button>
+            <!-- Dropdown menu -->
+            <div id="notication-icon" class="hidden z-10 w-44 font-normal bg-white/90 backdrop-blur-2xl rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-1 text-sm font-normal text-yellow-700 " aria-labelledby="dropdownLargeButton">
+                  <li>
+                    
+                    
+                    <a href="#" class="w-full inline-flex items-center space-x-1  py-2 px-4  hover:bg-yellow-100  dark:hover:text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                      </svg>New messages</a>
+                    
+                  </li>
+             
+    </div>
     </div>
     <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#home" class="block py-2 pr-4 pl-3 text-white bg-yellow-700 rounded md:bg-transparent md:text-yellow-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+          <a href="#home" class="src_nav_item" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#welcome" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="#welcome" class="src_nav_item">News</a>
         </li>
         <li>
-          <a href="#vision" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          <a href="#vision" class="src_nav_item">Videos</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          <a href="#vision" class="src_nav_item">Slideshub</a>
+        </li>
+        <li>
+          <a href="#" class="src_nav_item">Executives</a>
         </li>
       </ul>
     </div>
@@ -79,7 +101,7 @@
  
 <div id="home" class=" relative h-full overflow-hidden bg-no-repeat bg-cover" style="
     background-position: 50%;
-    background-image: url('../../static/img/obuasi.png');
+    background-image: url('../../static/img/obuasi..png');
     
   ">
   <div id="carouselExampleCaptions" class=" carousel slide carousel-fade relative h-full" data-bs-ride="carousel">
@@ -469,9 +491,6 @@
 </body>
 
 </html>
-
-
-
 
 
 
