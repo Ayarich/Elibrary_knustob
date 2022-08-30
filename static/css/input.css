@@ -47,6 +47,9 @@
      .src_heading_title{
       @apply text-4xl md:text-5xl lg:text-7xl tracking-wider font-serif font-extrabold mt-0 mb-6 text-yellow-400 uppercase
      }
+     .notification_icon{
+      @apply inline-flex relative items-center p-2 text-sm text-gray-50 rounded-lg     focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600 hover:bg-yellow-50 hover:text-yellow-700 justify-between md:dark:hover:bg-transparent
+     }
 }
 
 
