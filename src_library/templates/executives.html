@@ -10,40 +10,13 @@
 
   <link rel="stylesheet" href="../../static/src/output.css">
   <script src="../../static/js/darkmode.js" defer></script>
-  <style>
-    html,
-    body {
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-      scrollbar-width: none;
-      -ms-overflow-style: none
-    }
-
-    body::-webkit-scrollbar {
-      display: none
-    }
-
-    ::-moz-selection {
-      color: white;
-      background: #10b981
-    }
-
-    ::selection {
-      color: white;
-      background: #10b981
-    }
-    .scroll-hidden::-webkit-scrollbar {
-      height: 0px;
-      background: transparent;
-      /* make scrollbar transparent */
-    }
-  </style>
+ 
   <title>EXECUTIVES</title>
 </head>
    <body  class="bg-black duration-500"> 
     <!-- ----------------------------NAVBAR---------------------------- -->
     <header class="h-screen">
-        <nav class="bg-yellow-500/50 backdrop-blur-sm px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-[1000] top-0 left-0 border-b border-gray-500">
+        <nav class="navbar">
           <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="#" class="flex items-center">
               <img src="../../static/img/src.png" class="mr-2 h-10 sm:h-9" alt="KNUST OBUASI SRC Logo">
@@ -138,7 +111,7 @@
             </div>
           </div>
         </div>
-      </header>
+    </header>
       <main class="mt-20 flex flex-col gap-y-44 px-4 md:px-10">
       <!-- Welcome section -->
       <section id="welcome" class=" mb-20 py-14 ">
@@ -157,7 +130,7 @@
   
         <!-- WELOME TEXT -->
         <div class="">
-          <h1 class="md:text-5xl text-4xl lg:text-7xl font-extrabold tracking-wide text-white mb-10">Meet The Executives</h1>
+          <h1 class="md:text-5xl text-4xl lg:text-7xl font-extrabold tracking-wide text-white mb-10">The commitees under the umbrell of the SRC</h1>
           <p class=" max-w-lg text-sm text-gray-300 font-mono">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, corrupti architecto. Corrupti, voluptate? Fugit quod at quia excepturi dolorem illum, quo labore odio praesentium expedita adipisci itaque earum laudantium sunt.</p>
         </div>
   
@@ -237,10 +210,12 @@
       </div>
       
     </div>
-  </section>
+      </section>
   <!-- End Welcome section -->
+
+  
    
-</main>
+      </main>
   <script type="text/javascript">
     let h = document.documentElement, b = document.body, st = "scrollTop", sh = "scrollHeight", progress = document.querySelector("#progress"), scroll; let scrollpos = window.scrollY; let header = document.getElementById("header"); let navcontent = document.getElementById("nav-content"); document.addEventListener("scroll", function () { scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100; progress.style.setProperty("--scroll", scroll + "%"); scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); header.classList.add("shadow-xl"); navcontent.classList.remove("bg-gray-50"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); header.classList.remove("shadow-xl"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-50") } });
 

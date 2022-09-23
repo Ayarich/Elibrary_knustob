@@ -5,107 +5,104 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    html,
-    body {
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-      scrollbar-width: none;
-      -ms-overflow-style: none
-    }
+ 
 
-    body::-webkit-scrollbar {
-      display: none
-    }
-
-    ::-moz-selection {
-      color: white;
-      background: #10b981
-    }
-
-    ::selection {
-      color: white;
-      background: #10b981
-    }
-  </style>
-  <!-- Require css -->
-  <style>
-    .scroll-hidden::-webkit-scrollbar {
-      height: 0px;
-      background: transparent;
-      /* make scrollbar transparent */
-    }
-  </style>
   <link rel="stylesheet" href="../../static/src/output.css">
  
- 
+ <title>News</title>
 </head>
 
 <body >
-  <header class="h-screen ">
-    <nav class="nav_bar">
-      <div id="progress" class="h-1 z-[9999] m-0 top-[54px] relative" style="
-      background: linear-gradient(
-        to right,
-        #e4c308 var(--scroll),
-        transparent 0
-      );
-    ">
+  <header class="h-screen relative ">
+    <nav x-data="{ isOpen: false }" class="navbar">
+      <div id="progress" class="h-1 z-[9999] m-0 top-0 relative" style="
+background: linear-gradient(
+  to right,
+  #e4c308 var(--scroll),
+  transparent 0
+);
+">
 </div>
-      <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#" class="flex items-center">
-          <img src="../../static/img/src.png" class="mr-2 h-10 sm:h-9" alt="KNUST OBUASI SRC Logo">
-          <span class="self-center text-sm font-extrabold whitespace-nowrap text-white">KNUST SRC - OB</span>
-      </a>
-      <div class="flex md:order-2">
-  
-          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm hover:text-gray-600 text-gray-50 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        </button>
-          <button id="notification" data-dropdown-toggle="notication-icon" class="notification_icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-            </svg><div class="notification_on">12</div>
-          </button>
-              <!-- Dropdown menu -->
-              <div id="notication-icon" class="hidden z-10 w-44 font-normal bg-white/90 backdrop-blur-2xl rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-1 text-sm font-normal text-yellow-700 " aria-labelledby="dropdownLargeButton">
-                    <li>
-                      
-                      
-                      <a href="#" class="w-full inline-flex items-center space-x-1  py-2 px-4  hover:bg-yellow-100  dark:hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
-                        </svg>New messages</a>
-                      
-                    </li>
-               
-      </div>
-      </div>
-      <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="duration-500 flex flex-col  mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
-          <li>
-            <a href="#home" class="src_nav_item" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="./news.html" class="src_nav_item">News</a>
-          </li>
-          <li>
-            <a href="#vision" class="src_nav_item">Committees</a>
-          </li>
-          <li>
-            <a href="./members.html" class="src_nav_item">Executives</a>
-          </li>
-          <li>
-            <a href="#vision" target="_blank" class="src_nav_item">Slideshub</a>
-          </li>
-          <li>
-            <a href="#vision" class="src_nav_item">Contact Us</a>
-          </li>
-         
-        </ul>
-      </div>
+      <div class="container px-6 py-3 mx-auto relative">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+              <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                      <a class="navbar_home" href="#">
+                         <img src="../../static/img/src.png" class="mr-2 h-14 md:h-9" alt="KNUST OBUASI SRC Logo">
+                        <span class="self-center whitespace-nowrap dark:text-white">KNUST SRC - OB</span></a>
+                  
+                   
+                  </div>
+    
+                  <!-- Mobile menu button -->
+                  <div class="flex lg:hidden">
+                      <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                          <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                          </svg>
+                  
+                          <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+    
+              <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+              <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="border md:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ">
+                  <div class="flex flex-col md:flex-row md:mx-1 md:space-x-8 md:mr-5 ">
+                      <a class="src_nav_item" href="#">Home</a>
+                      <a class="src_nav_item" href="#">Executives</a>
+                      <a class="src_nav_item" href="#">Committees</a>
+                      <a class="src_nav_item" href="#">News</a>
+                      <a class="src_nav_item" href="#">Library</a>
+                  </div>
+    
+                 
+                  <div class="my-4 ">
+                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                  </button>
+                </div>
+    
+                 <!-- Search input on mobile screen -->
+                 <div class="my-4 hidden">
+                  <div class="relative">
+                      <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                          <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                              <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                      </span>
+    
+                      <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search">
+                  </div>
+              </div>
+              </div>
+          </div>
+    
+          <div class="py-3 mt-3 md:mt-0 -mx-3 overflow-y-auto whitespace-nowrap scroll-hidden hidden">
+              <a class="scroll_navbar_item" href="#">News</a>
+              <a class="scroll_navbar_item" href="#">Articles</a>
+              <a class="scroll_navbar_item" href="#">Videos</a>
+              <a class="scroll_navbar_item" href="#">Tricks</a>
+              <a class="scroll_navbar_item" href="#">PHP</a>
+              <a class="scroll_navbar_item" href="#">Laravel</a>
+              <a class="scroll_navbar_item" href="#">Vue</a>
+              <a class="scroll_navbar_item" href="#">React</a>
+              <a class="scroll_navbar_item" href="#">Tailwindcss</a>
+              <a class="scroll_navbar_item" href="#">Meraki UI</a>
+              <a class="scroll_navbar_item" href="#">CPP</a>
+              <a class="scroll_navbar_item" href="#">JavaScript</a>
+              <a class="scroll_navbar_item" href="#">Ruby</a>
+              <a class="scroll_navbar_item" href="#">Mysql</a>
+              <a class="scroll_navbar_item" href="#">Pest</a>
+              <a class="scroll_navbar_item" href="#">PHPUnit</a>
+              <a class="scroll_navbar_item" href="#">Netlify</a>
+              <a class="scroll_navbar_item" href="#">VS Code</a>
+              <a class="scroll_navbar_item" href="#">PHPStorm</a>
+              <a class="scroll_navbar_item" href="#">Sublime</a>
+          </div>
       </div>
     </nav>
    
@@ -164,8 +161,8 @@
               <!-- CAMPUS TEXT CONTAINER -->
             <div class="relative   mt-2 w-full flex justify-center items-center">
               <h3 class="text-base  p-3 md:p-0 md:text-lg lg:text-xl font-thin z-10  text-white">OBUASI CAMPUS</h3>
-              <span class="bg-gray-50/50 absolute w-1/4  h-[.01rem] left-0"></span>
-              <span class="bg-gray-50/50 absolute w-1/4 h-[.01rem] right-0"></span>
+              <span class="line_left"></span>
+              <span class="line_right"></span>
             </div>
              <!-- END OF CAMPUS TEXT CONTAINER -->
           </div>
@@ -175,9 +172,10 @@
   </header>
  
 
-
+<main class=" relative ">
+  
   <h1
-    class="font-sans font-bold text-2xl md:text-3xl  hidden lg:text-5xl 2xl:text-7xl leading-none  mb-4 text-center text-green-500 mt-64">
+    class="font-sans font-bold text-5xl md:text-3xl  lg:text-5xl 2xl:text-7xl leading-none  mb-4 text-center text-green-500 mt-64">
     Top Headlines
   </h1>
 
@@ -187,7 +185,7 @@
 
     <!--News Container/Wrapper -->
     <div
-      class="max-w-sm mx-auto place-items-center hidden md:max-w-2xl  lg:max-w-6xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 ">
+      class="max-w-sm mx-auto place-items-center  md:max-w-2xl  lg:max-w-6xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 ">
       {% for i in articles %}
       <!-- News Cards -->
       <div class="w-80 ">
@@ -234,77 +232,11 @@
 
     </div>
 
-  <main class=" grid  sm:space-x-0 md:space-x-4 sm:justify-center mx-10   grid-cols-1 md:grid-cols-2 md:mx-6 lg:grid-cols-3 md:space-x-3" >
-
-    
-    <div class="max-w-sm p-6 bg-white rounded-lg border gap  mt-6 border-gray-200 shadow hover:shadow-2xl transition-shadow  dark:bg-gray-800 dark:border-gray-700 ">
-      <a href="#">
-          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
-      </a>
-      <div class="pt-6">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
-    </div>
-
-    <div class="max-w-sm p-6 bg-white rounded-lg border  mt-6 border-gray-200 shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
-      <a href="#">
-          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
-      </a>
-      <div class="pt-6">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex w-full py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
-    </div>
-
-    <div class="max-w-sm p-6 bg-white rounded-lg border  mt-6 border-gray-200 shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
-      <a href="#">
-          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
-      </a>
-      <div class="pt-6">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
-    </div>
-
-    <div class="max-w-sm p-6 bg-white rounded-lg border  mt-6 border-gray-200 shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 ">
-      <a href="#">
-          <img class="rounded-t-lg" src="https://ww2.eagle.org/content/dam/eagle/Images/new-graphics/1920x1080/research-development-1920x1080.jpg" alt="">
-      </a>
-      <div class="pt-6">
-          <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700  dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </a>
-      </div>
-    </div>
-  </main>       
-
+  
 
 
   </div>
+</main>
 
 
 

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  body{
+    @apply bg-white dark:bg-black duration-500
+  }
+}
 
 
 
@@ -33,25 +38,84 @@
       @apply absolute inline-block top-2 right-2 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-1 px-1 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-500 text-white rounded-full z-10
     }
     .src_nav_item{
-      @apply block py-2 pr-2 pl-2 text-slate-600 md:text-slate-200 rounded hover:bg-yellow-100/50  hover:text-yellow-700 md:p-0 md:hover:bg-yellow-100/90  md:px-2 md:py-1 font-bold duration-300 text-sm lg:text-base
+      @apply block py-2 pr-2 pl-2 text-slate-700 dark:text-slate-200 md:hover:bg-yellow-100/90 hover:text-yellow-700 hover:dark:text-yellow-700  hover:bg-yellow-100  rounded   md:p-0   md:px-2 md:py-1 font-bold duration-300 text-sm lg:text-base
     }
-    .nav_bar{
-      @apply bg-slate-900/80  backdrop-blur-2xl px-2 sm:px-4 py-2.5  fixed w-full z-[1000] top-0 left-0 border-b border-gray-500
-    }
+    
      .src_executive_image{
-      @apply aspect-square md:h-96  2xl:h-[30rem]  w-full object-cover object-center z-10 filter saturate-0 shadow-xl shadow-gray-900 hover:saturate-100 duration-300
+      @apply aspect-square md:h-96  2xl:h-[30rem]  w-full object-cover object-center z-10 filter saturate-0 lg:shadow-xl shadow-gray-900 hover:saturate-100 duration-300
      }
      .executive_name{
-      @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide text-white mb-4 md:text-right
+      @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide transition-colors duration-500 text-gray-900 dark:text-white mb-4 md:text-right
      }
      .src_heading_title{
-      @apply text-4xl md:text-5xl lg:text-7xl tracking-wider font-serif font-extrabold mt-0 mb-6 text-yellow-400 uppercase
+      @apply text-6xl md:text-6xl lg:text-7xl font-extrabold mt-0 mb-6 text-yellow-400 uppercase
      }
-     .notification_icon{
+     /* .notification_icon{
       @apply inline-flex relative items-center p-2 text-sm text-gray-50 rounded-lg     focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600 hover:bg-yellow-50 hover:text-yellow-700 justify-between md:dark:hover:bg-transparent
-     }
+     } */
+
+    .scroll_navbar_item{
+      @apply mx-4 text-sm leading-5 text-gray-700 transition-colors duration-300 transform dark:text-gray-400 hover:text-blue-600 dark:hover:text-emerald-400 hover:underline md:my-0
+    }
+    .navbar_home{
+      @apply text-2xl font-bold text-gray-800 transition-colors duration-300 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300 flex items-center
+    }
+    .line_right{
+      @apply bg-emerald-500/90 absolute w-1/4 h-[.01rem] right-0
+    }
+    .line_left{
+      @apply bg-emerald-500/90 absolute w-1/4  h-[.01rem] left-0
+    }
+    .committee_description{
+      @apply text-gray-600 dark:text-gray-300 text-lg text-left md:text-left 
+    }
+    .committee_name{
+      @apply text-left md:text-5xl text-4xl  font-semibold tracking-wide transition-colors duration-500 text-gray-900 dark:text-white mb-4 md:text-left
+    }
+    .committee_members_container{
+      @apply mt-10 flex flex-col text-left
+
+    }
+    .committee_members{
+      @apply text-gray-600 dark:text-gray-400
+    }
+    .circles_container{
+    @apply  flex space-x-3 absolute mt-4 md:mt-0 -top-10
+    }
+    .tr-container{
+      @apply order-2 mb-20 lg:ml-0 w-full  lg:w-2/3 md:pl-10 flex flex-col space-y-10 md:items-end md:mt-16 lg:mt-0
+    }
+   .tl-container{
+    @apply order-1 w-full lg:w-2/3 h-full relative
+   }
+  }
+
+
+
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: none;
+  -ms-overflow-style: none
 }
 
+body::-webkit-scrollbar {
+  display: none
+}
 
+::-moz-selection {
+  color: white;
+  background: #10b981
+}
 
+::selection {
+  color: white;
+  background: #10b981
+}
+.scroll-hidden::-webkit-scrollbar {
+  height: 0px;
+  background: transparent;
 
+}

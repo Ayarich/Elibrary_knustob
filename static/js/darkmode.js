@@ -1,3 +1,20 @@
+// window.onscroll = function () {
+// 	scrollFunction();
+// 	scrollFunctionBTT(); // back to top button
+// };
+
+// window.onload = function () {
+// 	scrollFunction();
+// };
+
+// function scrollFunction() {
+// 	if (document.documentElement.scrollTop > 30) {
+// 		document.getElementById("nav_bar").classList.add("nav_bar");
+// 	} else if ( document.documentElement.scrollTop < 30 ) {
+// 		document.getElementById("navbarExample").classList.remove("top-nav-collapse");
+// 	}
+// } 
+
 
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -45,3 +62,4 @@
         }
         
     });
+    

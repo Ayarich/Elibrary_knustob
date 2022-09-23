@@ -9,6 +9,6 @@
     "flowbite": "^1.5.2"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./static/css/input.css -o ./static/src/output.css --watch"
+    "build": "npx tailwindcss -i ./static/css/input.css -o ./static/src/output.css --watch --minify"
   }
 }
