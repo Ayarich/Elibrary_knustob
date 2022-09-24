@@ -11,3 +11,6 @@ Or use ## *npm run build*
 
 ##  Also we are usng Alpine.js library to control the navbar
 <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+
+## The Icon pack we are using is from FontAwesome
+<script src="https://kit.fontawesome.com/a04dfe1eb8.js" crossorigin="anonymous"></script>
