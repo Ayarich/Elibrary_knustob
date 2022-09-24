@@ -60,7 +60,7 @@
       @apply mx-4 text-sm leading-5 text-gray-700 transition-colors duration-300 transform dark:text-gray-400 hover:text-blue-600 dark:hover:text-emerald-400 hover:underline md:my-0
     }
     .navbar_home{
-      @apply text-2xl font-bold text-gray-800 transition-colors duration-300 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300 flex items-center
+      @apply  font-bold text-gray-800 transition-colors duration-300 transform dark:text-white text-base hover:text-gray-700 dark:hover:text-gray-300 flex items-center
     }
     .line_right{
       @apply bg-emerald-500/90 absolute w-1/4 h-[.01rem] right-0
@@ -91,23 +91,25 @@
     @apply order-1 w-full lg:w-2/3 h-full relative
    }
    .program-section{
-    @apply top-10 relative space-y-4 border-b-2 border-gray-200 dark:border-gray-800 pb-10
+    @apply top-10 relative space-y-4 border-b-2 border-gray-200 dark:border-gray-800 pb-10 flex justify-center flex-col items-center
    }
    .video-container-grid{
     @apply grid grid-cols-1 place-items-center gap-10 items-center md:grid-cols-2 lg:grid-cols-3 
    }
-   .video-card-container{
-    @apply  block  max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
-  }
+   .video-card-container{ @apply max-w-sm rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+      }
   
   .video-card-description-content{
-    @apply p-6
+    @apply px-2 py-1.5
   }
    .video-card-title{
-    @apply mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white
+    @apply mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white
    }
    .video-card-description{
-    @apply font-normal text-gray-700 dark:text-gray-400
+    @apply font-normal text-gray-700 dark:text-gray-400 hidden
+   }
+   .mobile-menu-menu{
+    @apply border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center 
    }
   }
 
