@@ -8,12 +8,12 @@ const sr = ScrollReveal({
    reset: true
 }
 );
-sr.reveal(` .committee_description, .committee_name`, { interval: 300, delay: 300, })
+sr.reveal(` .committee_description, .committee_name, .committee_members_container`, { interval: 300, delay: 300, })
 // sr.reveal(``, {
 //   delay: 100,   reset: false
  
 // });
-sr.reveal(`.committee_members_container, .tl-container`, {
+sr.reveal(` .circles_container, .tl-container`, {
   origin: "left",
 
 }); 
