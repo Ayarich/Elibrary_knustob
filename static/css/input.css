@@ -90,6 +90,25 @@
    .tl-container{
     @apply order-1 w-full lg:w-2/3 h-full relative
    }
+   .program-section{
+    @apply top-10 relative space-y-4 border-b-2 border-gray-200 dark:border-gray-800 pb-10
+   }
+   .video-container-grid{
+    @apply grid grid-cols-1 place-items-center gap-10 items-center md:grid-cols-2 lg:grid-cols-3 
+   }
+   .video-card-container{
+    @apply  block  max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+  }
+  
+  .video-card-description-content{
+    @apply p-6
+  }
+   .video-card-title{
+    @apply mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white
+   }
+   .video-card-description{
+    @apply font-normal text-gray-700 dark:text-gray-400
+   }
   }
 
 
@@ -100,7 +119,8 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   scrollbar-width: none;
-  -ms-overflow-style: none
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
