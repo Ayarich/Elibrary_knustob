@@ -63,3 +63,5 @@
         
     });
     
+
+    ScrollReveal().reveal('committee_description', { reset: true, interval: 16 });

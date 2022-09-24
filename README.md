@@ -5,3 +5,9 @@
 npx tailwindcss -i ./static/css/input.css -o ./static/css/outputnew.css --watch
 
 Or use ## *npm run build*
+
+## For Scrolling animation, we are using ScrollReveal
+<script src="https://unpkg.com/scrollreveal"></script>
+
+##  Also we are usng Alpine.js library to control the navbar
+<script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
