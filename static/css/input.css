@@ -34,11 +34,9 @@
         @apply block w-full h-full object-cover object-center filter saturate-0
       }
       
-    .notification_on{
-      @apply absolute inline-block top-2 right-2 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-1 px-1 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-yellow-500 text-white rounded-full z-10
-    }
+  
     .src_nav_item{
-      @apply block py-2 pr-2 pl-2 text-slate-700 dark:text-slate-200 md:hover:bg-yellow-100/90 hover:text-yellow-700 hover:dark:text-yellow-700  hover:bg-yellow-100  rounded   md:p-0   md:px-2 md:py-1 font-bold duration-300 text-sm lg:text-base
+      @apply block space-x-1 py-2 pr-2 pl-2 text-slate-700 dark:text-slate-200 md:hover:bg-yellow-100/90 hover:text-yellow-700 hover:dark:text-yellow-700  hover:bg-yellow-100  rounded   md:p-0   md:px-2 md:py-1 font-bold duration-300 text-sm lg:text-[0.95rem]
     }
     
      .src_executive_image{
@@ -57,7 +55,7 @@
   @apply dark:bg-gray-900 bg-white fixed top-0 z-[50000] w-full
 }
     .scroll_navbar_item{
-      @apply mx-4 text-sm leading-5 text-gray-700 transition-colors duration-300 transform dark:text-gray-400 hover:text-blue-600 dark:hover:text-emerald-400 hover:underline md:my-0
+      @apply  text-sm px-2 py-1 rounded leading-5 text-gray-700 transition-colors duration-300 transform dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-500/20 md:my-0
     }
     .navbar_home{
       @apply  font-bold text-gray-800 transition-colors duration-300 transform dark:text-white text-base hover:text-gray-700 dark:hover:text-gray-300 flex items-center
@@ -85,7 +83,7 @@
     @apply  flex space-x-3 absolute mt-4 md:mt-0 -top-10
     }
     .tr-container{
-      @apply order-2 mb-20 lg:ml-0 w-full  lg:w-2/3 md:pl-10 flex flex-col space-y-10 md:items-end md:mt-16 lg:mt-0
+      @apply order-2 mb-20 lg:ml-0 w-full  lg:w-2/3 lg:pl-10 flex flex-col space-y-10 lg:items-end md:mt-16 lg:mt-0
     }
    .tl-container{
     @apply order-1 w-full lg:w-2/3 h-full relative
@@ -110,6 +108,9 @@
    }
    .mobile-menu-menu{
     @apply border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center 
+   }
+   .footer{
+    @apply md:mx-auto md:bottom-10 relative bottom-0 left-0 z-20 p-4 rounded-md md:max-w-4xl w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600
    }
   }
 

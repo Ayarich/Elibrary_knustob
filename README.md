@@ -14,3 +14,14 @@ Or use ## *npm run build*
 
 ## The Icon pack we are using is from FontAwesome
 <script src="https://kit.fontawesome.com/a04dfe1eb8.js" crossorigin="anonymous"></script>
+
+
+<!-- ICONS -->
+home icon <i class="fa-solid fa-house"></i>
+news icon <i class="fa-solid fa-newspaper"></i>
+library icon <i class="fa-solid fa-book"></i>
+location icon <i class="fa-solid fa-location-dot"></i>
+videos icon <i class="fa-solid fa-video"></i>
+committees icon <i class="fa-solid fa-people-group"></i>
+executives icon <i class="fa-solid fa-user"></i>
+contact us <i class="fa-solid fa-messages"></i>

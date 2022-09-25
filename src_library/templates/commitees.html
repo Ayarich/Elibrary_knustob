@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://kit.fontawesome.com/a04dfe1eb8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../static/src/output.css">
   <script src="../../static/js/darkmode.js" defer></script>
   <style>
@@ -19,37 +20,7 @@
 <body class="">
   <!-- ----------------------------NAVBAR---------------------------- -->
   <header class="h-screen">
-    <!-- <nav class="navbar">
-          <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" class="flex items-center">
-              <img src="../../static/img/src.png" class="mr-2 h-10 sm:h-9" alt="KNUST OBUASI SRC Logo">
-              <span class="self-center text-sm font-extrabold whitespace-nowrap text-white">KNUST SRC - OB</span>
-          </a>
-          <div class="flex md:order-2">
-              <button type="button" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Sign In</button>
-              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-            </button>
-          </div>
-          <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a href="#home" class="block py-2 pr-4 pl-3 text-white bg-yellow-700 rounded md:bg-transparent md:text-yellow-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#welcome" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-              </li>
-              <li>
-                <a href="#vision" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-              </li>
-            </ul>
-          </div>
-          </div>
-        </nav> -->
+   
     <!-- Require css -->
 
     <!-- Nav Bar-->
@@ -94,13 +65,27 @@
           <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
           <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
             class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-            <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-8 lg:mr-5 ">
-              <a class="src_nav_item" href="#">Home</a>
-              <a class="src_nav_item" href="#">Executives</a>
-              <a class="src_nav_item" href="#">Committees</a>
-              <a class="src_nav_item" href="#">News</a>
-              <a class="src_nav_item" href="#">Library</a>
-              <a class="src_nav_item" href="#">Contact Us</a>
+            <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 ">
+              <a class="src_nav_item" href="#">
+                <i class="fa-solid fa-house"></i>
+               <span>Home</span>
+              </a>
+              <a class="src_nav_item" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Executives</span>
+              </a>
+              <a class="src_nav_item" href="#">
+                <i class="fa-solid fa-people-group"></i><span>Committees</span>
+                </a>
+              <a class="src_nav_item" href="#"><i class="fa-solid fa-newspaper"></i>
+              <span>News</span>
+              </a>
+              <a class="src_nav_item" href="#"><i class="fa-solid fa-book"></i>
+              <span>Library</span>
+              </a>
+              <a class="src_nav_item" href="#"><i class="fa-solid fa-message"></i>
+              <span>Contact Us</span>
+              </a>
             </div>
 
 
@@ -147,19 +132,7 @@
           <a class="scroll_navbar_item" href="#">PHP</a>
           <a class="scroll_navbar_item" href="#">Laravel</a>
           <a class="scroll_navbar_item" href="#">Vue</a>
-          <a class="scroll_navbar_item" href="#">React</a>
-          <a class="scroll_navbar_item" href="#">Tailwindcss</a>
-          <a class="scroll_navbar_item" href="#">Meraki UI</a>
-          <a class="scroll_navbar_item" href="#">CPP</a>
-          <a class="scroll_navbar_item" href="#">JavaScript</a>
-          <a class="scroll_navbar_item" href="#">Ruby</a>
-          <a class="scroll_navbar_item" href="#">Mysql</a>
-          <a class="scroll_navbar_item" href="#">Pest</a>
-          <a class="scroll_navbar_item" href="#">PHPUnit</a>
-          <a class="scroll_navbar_item" href="#">Netlify</a>
-          <a class="scroll_navbar_item" href="#">VS Code</a>
-          <a class="scroll_navbar_item" href="#">PHPStorm</a>
-          <a class="scroll_navbar_item" href="#">Sublime</a>
+        
         </div>
       </div>
     </nav>
@@ -219,991 +192,1181 @@
       </div>
     </div>
   </header>
+  <!-- ----------------------------END OF NAVBAR---------------------- -->
 
-  <!-- END OF NAVBAR -->
 
-
+  <!------------------------------ Main section--------------------------- -->
   <main class="mt-20 flex flex-col gap-y-44 px-4 md:px-10">
 
 
- 
+  
     <!--============ END OF WELCOME SECTION =========== -->
     <!-- COMMITTEES UNDER THE SRC -->
-    <div class="mx-auto max-w-screen-2xl mt-24  relative">
+    <div class="mx-auto max-w-screen-2xl mt-24  relative px-2">
       <div class="circles_container ">
         <span class="three-dots bg-green-500"></span>
         <span class="three-dots bg-red-500"></span>
         <span class="three-dots bg-yellow-400"></span>
       </div>
-      <h1 class="md:text-5xl text-4xl lg:text-7xl font-extrabold tracking-wide text-black dark:text-white mb-10">
+    
+    <div class="mb-20 max-w-3xl space-y-5 sm:mx-auto sm:space-y-4">
+      <h1 class="md:text-5xl text-3xl lg:text-[3.5rem] font-extrabold tracking-wide relative sm:text-5xl  text-emerald-400">
         Meet The Committees</h1>
-      <p class=" text-gray-600 dark:text-gray-300 font-mono">Lorem ipsum, dolor sit amet consectetur adipisicing
+      <p class=" text-gray-600 dark:text-gray-100 text-base ">Lorem ipsum, dolor sit amet consectetur adipisicing
         elit. Sed, corrupti architecto. Corrupti, voluptate? Fugit quod at quia excepturi dolorem illum, quo
         labore odio praesentium expedita adipisci itaque earum laudantium sunt.</p>
     </div>
+    </div>
 
 
-      <!-- content container -->
-      <div class="mt-20 flex flex-col gap-y-44 px-4 md:px-10">
+    <!-- content container -->
+    <div class="mt-20 flex flex-col gap-y-44 px-4 md:px-10">
 
-        <!-- Women's Commission -->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
+      <!-- Women's Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-            <!-- left side -->
-            <div class="tr-container">
+          <!-- left side -->
+          <div class="tr-container">
 
-              <!-- WOmem-->
-              <div class=" relative">
-                <!-- 3 dots container -->
-                <div class="circles_container ">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Women's Commission</h1>
-                <p class="committee_description">
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class="text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
+            <!-- WOmem-->
+            <div class=" relative">
+              <!-- 3 dots container -->
+              <div class="circles_container ">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
               </div>
+              <h1 class="committee_name">
+                Women's Commission</h1>
+              <p class="committee_description">
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
 
+                <ul class="text-gray-600 dark:text-gray-400 text-lg">
 
-              <!-- END OF WELCOME TEXT -->
-
-
-
-
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden shadow-2xl shadow-slate-800/40">
-                <img src="../../static/img/profile2.jpg" alt="campus" class="src_executive_image">
 
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-yellow-400 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-yellow-400 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <!-- END OF WELCOME TEXT -->
+
+
+
+
           </div>
-        </section>
-        <!-- END OF WOMEN'S COMMISSION -->
 
-
-        <!--Public Relations Office-->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- right side -->
-            <div class="tr-container ">
-
-              <!-- Public Relations Office -->
-              <div class="mx-auto  relative ">
-                <!-- 3 dots container -->
-                <div class="circles_container .load-hidden ">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name ">Public Relations Office</h1>
-                  <h3 class="font-extrabold mt-10 mb-3 text-sm  text-yellow-600 underline underline-offset-2"> TRANSPORT COMMISSION</h3>
-                <div class="committee_description">
-                  <ol class="list-decimal list-inside">
-<li>There shall be established a Transport Commission of the SRC which shall be composed of:
-<ul class="list-disc list-inside">
-  <li>The Transport Commissioner who shall be appointed by the President in a letter signed by the President and the General Secretary to the person and copied to the Speaker.
-                  
-  </li>
-  <li> Two other members of the commission who shall be appointed by the Transport Commissioner in a letter signed by the President and the Transport Commissioner.</li>
-</ul>
-</li>
-<li>The Transport Commission shall:
-  <ul class="list-disc list-inside">
-    <li>Be responsible for the operation of commercial vehicle activities on campus.</li>
-    <li>Receive all applications for the use of all the transport facilities of the SRC.</li>
-    <li>Be responsible for the arrangement of student transport services outside campus.</li>
-    <li>Coordinate all transport arrangements of groups travelling under SRC sponsorship.</li>
-    <li>Shall perform any other duty assigned to it by the Executive Council and or the Parliamentary Council.</li>
-  </ul>
-</li>
-<li>The Transport Commissioner shall in consultation with the Legal Affairs Commission draft a work document to regulate its affairs.</li>
-<li>The Transport Commission shall be in consultation with the Properties and Facilities Commission on the usage, management and maintenance of all SRC transport facilities.</li>
-<li>Notwithstanding anything in this Constitution, the Properties and Facilities Commission shall have full control of all SRC transport facilities and shall make it available to the Transport Commission on demand by the Commission.
-</li>
-<li> Our doors are always opened for students with any issue on transportation; never hesitate to talk to the Transport Commissioner or any member of the transport committee about issues on transportation. We are always available to serve the KNUST student populace.</li>
-               
-                  
-</ol>            
-  </div>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class="text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-
-
-              <!-- END OF WELCOME TEXT -->
-
-
-
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden shadow-2xl shadow-slate-800/40">
+              <img src="../../static/img/profile2.jpg" alt="campus" class="src_executive_image">
 
             </div>
-
-            <!--left side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden shadow-2xl shadow-slate-800/40">
-                <img src="../../static/img/profile1.jpg" alt="campus" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-sky-400 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-sky-400 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-yellow-400 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-yellow-400 -z-10 -left-10 absolute -bottom-10 "></span>
           </div>
-        </section>
-        <!-- END OF Public Relations Office -->
+        </div>
+      </section>
+      <!-- END OF WOMEN'S COMMISSION -->
 
 
-        <!--Legal Affairs Commission -->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
+      <!--Public Relations Office-->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-            <!-- left side -->
-            <div class="tr-container">
+          <!-- right side -->
+          <div class="tr-container ">
 
-              <!-- end of three dots -->
-
-
-              <!-- Vision TEXT -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Legal Affairs Commission</h1>
-                <p class="committee_description"> The Legal Affairs Commission is a standing committee that is
-                  established formally by the SRC Constitution (as amended 2021) in article 66 (1) of the same working
-                  document.
-
-                  It consists of the SRC Legal Affairs Commissioner and four other committee members appointed by the
-                  Commissioner who work hand-in-hand in advising the Executive Council as and when legal matters arise.
-                  The Commission is also responsible in ensuring that all Clubs and Societies, Associations are
-                  scrutinized to ensure that their rules are in conformity with the SRC constitution and the University
-                  regulations.
-                  The Commission is also the main font for establishing proceedings against the SRC President and is
-                  thus solely responsible for representing the SRC at all hearings at the judicial committee.
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class="text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
+            <!-- Public Relations Office -->
+            <div class="mx-auto  relative ">
+              <!-- 3 dots container -->
+              <div class="circles_container .load-hidden ">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
               </div>
-              <!-- END OF WELCOME TEXT -->
+              <h1 class="committee_name ">Public Relations Office</h1>
+              <h3 class="font-extrabold mt-10 mb-3 text-sm  text-amber-500 underline underline-offset-2"> TRANSPORT
+                COMMISSION</h3>
+              <div class="committee_description">
+                <ol class="list-decimal list-inside">
+                  <li>There shall be established a Transport Commission of the SRC which shall be composed of:
+                    <ul class="list-disc list-inside ">
+                      <li>The Transport Commissioner who shall be appointed by the President in a letter signed by the
+                        President and the General Secretary to the person and copied to the Speaker.
 
+                      </li>
+                      <li> Two other members of the commission who shall be appointed by the Transport Commissioner in a
+                        letter signed by the President and the Transport Commissioner.</li>
+                    </ul>
+                  </li>
+                  <li>The Transport Commission shall:
+                    <ul class="list-disc list-inside">
+                      <li>Be responsible for the operation of commercial vehicle activities on campus.</li>
+                      <li>Receive all applications for the use of all the transport facilities of the SRC.</li>
+                      <li>Be responsible for the arrangement of student transport services outside campus.</li>
+                      <li>Coordinate all transport arrangements of groups travelling under SRC sponsorship.</li>
+                      <li>Shall perform any other duty assigned to it by the Executive Council and or the Parliamentary
+                        Council.</li>
+                    </ul>
+                  </li>
+                  <li>The Transport Commissioner shall in consultation with the Legal Affairs Commission draft a work
+                    document to regulate its affairs.</li>
+                  <li>The Transport Commission shall be in consultation with the Properties and Facilities Commission on
+                    the usage, management and maintenance of all SRC transport facilities.</li>
+                  <li>Notwithstanding anything in this Constitution, the Properties and Facilities Commission shall have
+                    full control of all SRC transport facilities and shall make it available to the Transport Commission
+                    on demand by the Commission.
+                  </li>
+                  <li> Our doors are always opened for students with any issue on transportation; never hesitate to talk
+                    to the Transport Commissioner or any member of the transport committee about issues on
+                    transportation. We are always available to serve the KNUST student populace.</li>
+
+
+                </ol>
+              </div>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class="text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
 
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <!-- END OF WELCOME TEXT -->
+
+
+
+
           </div>
-        </section>
-        <!-- END of LEGAL AFFAIRS -->
 
-
-
-        <!--Welfare Commission -->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-              
-              <div class="relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Welfare Commission</h1>
-                <p class="committee_description">
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class="hidden text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END  -->
+          <!--left side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden shadow-2xl shadow-slate-800/40">
+              <img src="../../static/img/profile1.jpg" alt="campus" class="src_executive_image">
 
             </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-sky-400 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-sky-400 -z-10 -left-10 absolute -bottom-10 "></span>
           </div>
-        </section>
-        <!-- END of Welfare Commission -->
-
-         <!--Entertainment Committee -->
-         <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
+        </div>
+      </section>
+      <!-- END OF Public Relations Office -->
 
 
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Entertainment Committee</h1>
-                <p class="committee_description">
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
+      <!--Legal Affairs Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-                  <ul class="hidden text-gray-600 dark:text-gray-400 text-lg">
+          <!-- left side -->
+          <div class="tr-container">
 
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
+            <!-- end of three dots -->
+
+
+            <!-- Vision TEXT -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
               </div>
-              <!-- END OF Welfare Commission -->
+              <h1 class="committee_name">
+                Legal Affairs Commission</h1>
+              <p class="committee_description"> The Legal Affairs Commission is a standing committee that is
+                established formally by the SRC Constitution (as amended 2021) in article 66 (1) of the same working
+                document.
 
-            </div>
+                It consists of the SRC Legal Affairs Commissioner and four other committee members appointed by the
+                Commissioner who work hand-in-hand in advising the Executive Council as and when legal matters arise.
+                The Commission is also responsible in ensuring that all Clubs and Societies, Associations are
+                scrutinized to ensure that their rules are in conformity with the SRC constitution and the University
+                regulations.
+                The Commission is also the main font for establishing proceedings against the SRC President and is
+                thus solely responsible for representing the SRC at all hearings at the judicial committee.
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
 
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
+                <ul class="text-gray-600 dark:text-gray-400 text-lg">
 
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
               </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
             </div>
+            <!-- END OF WELCOME TEXT -->
+
           </div>
-        </section>
-        <!-- END of Entertainment Committee -->
 
-
-
-        <!--Properties & Facilities Commission -->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
-
-
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Properties & Facilities Commission</h1>
-                <div class="committee_description">
-<ol class="list-decimal list-inside">
-<li>The Properties and Facilities Commissioner is the chairperson of the Properties and Facilities Commission.</li>
-<li> The Properties and Facilities Commissioner is the sole commissioner in charge of general supervision of SRC owned properties and facilities.</li>
-<li>The Properties and Facilities Commissioner is inform the Executive Council on the state of all SRC owned properties and how they are being maintained.</li>
-<li>The Properties and Facilities Commissioner shall perform other functions relating to his office assigned to him by the Executive Council and by this Constitution.
-  <ul class="list-disc list-inside">
-    <li>The Properties and Facilities Commissioner who shall be appointed by the President in a letter signed by the President and the General Secretary to the Person and copied to the Speaker.</li>
-    <li> Six (6) other members of the Commission who shall be appointed by the Properties and Facilities Commissioner in a letter signed by the President and the Properties and Facilities Commissioner to the persons.</li>
-   
-  </ul>
-</li>
-<li>The Properties and Facilities Commissioner shall for the purposes of the effective running of the commission create the offices of:
-   <ul class="list-disc list-inside">
-     <li>SRC Hostel Management which shall be headed by one of the six persons appointed under sub-clause (b) of article 64 of the SRC constitution and chosen by the Properties and Facilities Commissioner specifically for this purpose.</li>
-     <li> Project Management which shall be headed by one of the six persons appointed under sub-clause (b) of the article 64 of the SRC constitution and chosen by the Properties and Facilities Commissioner specifically for that purpose</li>
-     <li>Maintenance and Supervision which shall be headed by one of the six persons appointed under sub-clause (b) of this article and chosen by the Properties and Facilities Commissioner specifically for that purpose.</li>
-   </ul>
-</li>
-<li>  Pursuant to clause 2, all other remaining members of the Commission shall aid the persons chosen under clause 2(a), (b) and (c) of the article 64 of the SRC constitution in the performance of their duties.</li>
-<li>The Properties and Facilities Commission :
-    <ul class="list-disc list-inside">
-       <li> Keeps records of all properties and facilities of the SRC.</li>
-       <li>Strategize as to how to maintain and keep properties and facilities of the SRC.</li>
-       <li>Shall perform any other duty assigned to it by the Executive Council and or the Parliamentary Council.</li>
-    </ul>
-</li>
- <li>Persons chosen to head the various offices created under clause (2) shall report directly to the Properties and Facilities Commissioner who shall be the sole commissioner exercising supervisory control over their functions.</li>
- <li>The Properties and Facilities Commissioner shall in consultation with the Legal Affairs Commission draft a work document to regulate the affairs of the Commission.</li>
- <li>The Properties and Facilities Commissioner shall be the sole commissioner responsible for delivering the report on the state of Properties and facilities of the SRC to the Parliamentary Council at least once every semester and may delegate any other member of the commission to represent him.</li>
-</ol>
-
-
-                </div>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
 
             </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
           </div>
-        </section>
-        <!-- END of Properties & Facilities Commission -->
+        </div>
+      </section>
+      <!-- END of LEGAL AFFAIRS -->
 
 
 
-        <!--Entertainment Committee -->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
+      <!--Welfare Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-            <!-- left side -->
-            <div class="tr-container">
+          <!-- left side -->
+          <div class="tr-container">
 
-              <!-- end of three dots -->
-
-
-              <!-- Transport Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Transport Commission</h1>
-                <p class="committee_description">
-                  The Transport Commissioner is appointed by the President in a letter signed by the President and the General Secretary to the person and copied to the Speaker.  Two other members of the commission who shall be appointed by the Transport Commissioner in a letter signed by the President and the Transport Commissioner.
-
-                  The Transport Commission is responsible for the operation of commercial vehicle activities on campus.Receive all applications for the use of all the transport facilities of the SRC and is responsible for the arrangement of student transport services outside campus,He Coordinate all transport arrangements of groups traveling under SRC sponsorship.The Transport Commissioner shall in consultation with the Legal Affairs Commission draft a work document to regulate its affairs.He manages and maintain  all SRC transport facilities.
-
-                   Our doors are always opened for students with any issue on transportation; never hesitate to talk to the Transport Commissioner or any member of the transport
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
+            <div class="relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
               </div>
-              <!-- END OF Welfare Commission -->
+              <h1 class="committee_name">
+                Welfare Commission</h1>
+              <p class="committee_description">
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
 
-            </div>
+                <ul class="hidden text-gray-600 dark:text-gray-400 text-lg">
 
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
               </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
             </div>
+            <!-- END  -->
+
           </div>
-        </section>
-        <!-- END of Entertainment Committee -->
 
-
-        <!--Entertainment Committee -->
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
-
-
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Internship Directorate</h1>
-                <p class="committee_description">
-                  The internship Directorate is mandated to coordinate the cooperative arrangement between a private or government institution and the school, that allows students to apply their knowledge and skills in a professional setting.
-
-                 The Internship Program is a natural extension of KNUST's "learning by doing" educational philosophy.
-
-                Therefore, the Directorate liaise with College internship offices to ensure that every student that graduates from KNUST has the basic skills to function effectively in the workplace of his or her chosen field.
-
-                 The Directorate is spearheaded by an Internship Director and three other deputies.
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
 
             </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
           </div>
-        </section>
-        <!-- END of Entertainment Committee -->
+        </div>
+      </section>
+      <!-- END of Welfare Commission -->
 
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
+      <!--Entertainment Committee -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-            <!-- left side -->
-            <div class="tr-container">
+          <!-- left side -->
+          <div class="tr-container">
 
-              <!-- end of three dots -->
+            <!-- end of three dots -->
 
 
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Sports and Ganes Commission</h1>
-                <p class="committee_description">
-                  
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
               </div>
-              <!-- END OF Welfare Commission -->
+              <h1 class="committee_name">
+                Entertainment Committee</h1>
+              <p class="committee_description">
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
 
-            </div>
+                <ul class="hidden text-gray-600 dark:text-gray-400 text-lg">
 
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
               </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
             </div>
+            <!-- END OF Welfare Commission -->
+
           </div>
-        </section>
 
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
 
-            <!-- left side -->
-            <div class="tr-container">
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- END of Entertainment Committee -->
 
-              <!-- end of three dots -->
 
 
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Clubs and Societies Commission</h1>
-                <div class="committee_description">
-                  In line with the University's decision to prevent occultism, hooliganism and terrorism, the Office of the clubs and societies commissioner was established in page 70, chapter 61 of the students guide and supported by the 2011 SRC constitution as amended in 2021 to register and monitor the activities of students groups on campus.
+      <!--Properties & Facilities Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-                 Identified students’ Clubs and Societies on campus fall within six main groupings namely: Religious, Alumni, Ethnic, Professional, College/Faculty/ Departmental and International.
-                 Clubs and Societies are financed partly by the payment of membership dues.
-                 Students shall have freedom of association, however :
-                 <ol class="list-decimal list-inside ">
-                  <li> Only clubs/societies recognized by the Residence Committee shall be entitled to the use of university facilities.</li>
-                  <li>Clubs and Society Secretaries are required at the beginning of each session to submit to the Dean of Students the particulars of Principal Officers and Committee Members of their club or society with a copy to the Residence Committee.</li>
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Properties & Facilities Commission</h1>
+              <div class="committee_description">
+                <ol class="list-decimal list-inside">
+                  <li>The Properties and Facilities Commissioner is the chairperson of the Properties and Facilities
+                    Commission.</li>
+                  <li> The Properties and Facilities Commissioner is the sole commissioner in charge of general
+                    supervision of SRC owned properties and facilities.</li>
+                  <li>The Properties and Facilities Commissioner is inform the Executive Council on the state of all SRC
+                    owned properties and how they are being maintained.</li>
+                  <li>The Properties and Facilities Commissioner shall perform other functions relating to his office
+                    assigned to him by the Executive Council and by this Constitution.
+                    <ul class="list-disc list-inside">
+                      <li>The Properties and Facilities Commissioner who shall be appointed by the President in a letter
+                        signed by the President and the General Secretary to the Person and copied to the Speaker.</li>
+                      <li> Six (6) other members of the Commission who shall be appointed by the Properties and
+                        Facilities Commissioner in a letter signed by the President and the Properties and Facilities
+                        Commissioner to the persons.</li>
+
+                    </ul>
+                  </li>
+                  <li>The Properties and Facilities Commissioner shall for the purposes of the effective running of the
+                    commission create the offices of:
+                    <ul class="list-disc list-inside">
+                      <li>SRC Hostel Management which shall be headed by one of the six persons appointed under
+                        sub-clause (b) of article 64 of the SRC constitution and chosen by the Properties and Facilities
+                        Commissioner specifically for this purpose.</li>
+                      <li> Project Management which shall be headed by one of the six persons appointed under sub-clause
+                        (b) of the article 64 of the SRC constitution and chosen by the Properties and Facilities
+                        Commissioner specifically for that purpose</li>
+                      <li>Maintenance and Supervision which shall be headed by one of the six persons appointed under
+                        sub-clause (b) of this article and chosen by the Properties and Facilities Commissioner
+                        specifically for that purpose.</li>
+                    </ul>
+                  </li>
+                  <li> Pursuant to clause 2, all other remaining members of the Commission shall aid the persons chosen
+                    under clause 2(a), (b) and (c) of the article 64 of the SRC constitution in the performance of their
+                    duties.</li>
+                  <li>The Properties and Facilities Commission :
+                    <ul class="list-disc list-inside">
+                      <li> Keeps records of all properties and facilities of the SRC.</li>
+                      <li>Strategize as to how to maintain and keep properties and facilities of the SRC.</li>
+                      <li>Shall perform any other duty assigned to it by the Executive Council and or the Parliamentary
+                        Council.</li>
+                    </ul>
+                  </li>
+                  <li>Persons chosen to head the various offices created under clause (2) shall report directly to the
+                    Properties and Facilities Commissioner who shall be the sole commissioner exercising supervisory
+                    control over their functions.</li>
+                  <li>The Properties and Facilities Commissioner shall in consultation with the Legal Affairs Commission
+                    draft a work document to regulate the affairs of the Commission.</li>
+                  <li>The Properties and Facilities Commissioner shall be the sole commissioner responsible for
+                    delivering the report on the state of Properties and facilities of the SRC to the Parliamentary
+                    Council at least once every semester and may delegate any other member of the commission to
+                    represent him.</li>
+                </ol>
+
+
+              </div>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- END of Properties & Facilities Commission -->
+
+
+
+      <!--Transport Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Transport Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Transport Commission</h1>
+              <p class="committee_description">
+                The Transport Commissioner is appointed by the President in a letter signed by the President and the
+                General Secretary to the person and copied to the Speaker. Two other members of the commission who shall
+                be appointed by the Transport Commissioner in a letter signed by the President and the Transport
+                Commissioner.
+
+                The Transport Commission is responsible for the operation of commercial vehicle activities on
+                campus.Receive all applications for the use of all the transport facilities of the SRC and is
+                responsible for the arrangement of student transport services outside campus,He Coordinate all transport
+                arrangements of groups traveling under SRC sponsorship.The Transport Commissioner shall in consultation
+                with the Legal Affairs Commission draft a work document to regulate its affairs.He manages and maintain
+                all SRC transport facilities.
+
+                Our doors are always opened for students with any issue on transportation; never hesitate to talk to the
+                Transport Commissioner or any member of the transport
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of Transport Commission-->
+
+
+      <!--Internship Directorate-->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!--  -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Internship Directorate</h1>
+              <p class="committee_description">
+                The internship Directorate is mandated to coordinate the cooperative arrangement between a private or
+                government institution and the school, that allows students to apply their knowledge and skills in a
+                professional setting.
+
+                The Internship Program is a natural extension of KNUST's "learning by doing" educational philosophy.
+
+                Therefore, the Directorate liaise with College internship offices to ensure that every student that
+                graduates from KNUST has the basic skills to function effectively in the workplace of his or her chosen
+                field.
+
+                The Directorate is spearheaded by an Internship Director and three other deputies.
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of Internship Directorate -->
+
+
+      <!-- Sports and Ganes Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Sports and Ganes Commission</h1>
+              <p class="committee_description">
+
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of Sports and Ganes Commission -->
+
+
+      <!-- Clubs and Societies Commission -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Clubs and Societies Commission</h1>
+              <div class="committee_description">
+                In line with the University's decision to prevent occultism, hooliganism and terrorism, the Office of
+                the clubs and societies commissioner was established in page 70, chapter 61 of the students guide and
+                supported by the 2011 SRC constitution as amended in 2021 to register and monitor the activities of
+                students groups on campus.
+
+                Identified students’ Clubs and Societies on campus fall within six main groupings namely: Religious,
+                Alumni, Ethnic, Professional, College/Faculty/ Departmental and International.
+                Clubs and Societies are financed partly by the payment of membership dues.
+                Students shall have freedom of association, however :
+                <ol class="list-decimal list-inside ">
+                  <li> Only clubs/societies recognized by the Residence Committee shall be entitled to the use of
+                    university facilities.</li>
+                  <li>Clubs and Society Secretaries are required at the beginning of each session to submit to the Dean
+                    of Students the particulars of Principal Officers and Committee Members of their club or society
+                    with a copy to the Residence Committee.</li>
                   The registration procedures are as set out below:
 
-                   <ol class="list-decimal list-inside">
-                     <li>Members or promoters of a new club or society shall be required to obtain an application form from
-                      the Clubs and Societies Chairman of the SRC.</li>
-                     <li> The completed form shall be submitted to the Clubs and Societies Chairman, accompanied by three
-                      (3) copies of its Constitution and forwarded by the SRC to the Dean of Students to make necessary comments</li>
-                     <li>The Dean of Students shall vet the submitted application form and constitution and make
-                      recommendations to the Residence Committee.</li>
-                     <ul class="list-disc list-inside">
-                      <li>If the application is by a non-religious club or society, it shall be submitted to the Residence
-                        Committee by the Dean of Students for approval/recognition, after the vetting.</li>
-                      <li>If the application is by a Christian, religious club or society, it shall be submitted by the Dean of Students to the two (2) Chaplains i.e. Protestant and Catholic for their comments/recommendations.</li>
-       
-                     </ul>
-                     The application shall then be returned to the Dean of Students for final submission to the Residence
-                     Committee for approval/recognition.Given the proliferation of religious groups on campus in our limited environment, it has been decided by the Residence Committee that any new religious group seeking recognition to operate on campus shall provide 500 signed-up members.
-                     In the case of Muslim groupings, the application shall be vetted by the KNUST Muslim Community Chairman before forwarding it to the Dean of Students.
-                      All college/faculty/department associations shall be given recognition by Residence Committee once the Dean of Students receives their endorsed documents by the appropriate head.
-
-                      <li>After approval of application by the Residence Committee, a certificate for commencement of activities shall formally be issued by the Dean of Students at a cost to be determined by the Dean of Students in consultation with the SRC every club/society shall renew its certificate of operation every 4 years.</li>
-
-                      <li>Every club/society shall laminate her certificate and have it available for inspection at every meeting.</li>
-                      <li>Every registered club or society, which collects or receives funds, shall submit an annual statement of audited account to the Office of the Dean of Students in accordance with the University Financial and Stores Regulations. Such reports should reach the Dean of Students not later than two weeks before the handing over of office or before new Executive Committee members takes over.
-                        The Dean of Students shall then hand over the accounts to the Internal Auditor who shall act as the external auditors for the clubs/societies. Failure to comply may lead to the withdrawal of certificate of recognition.</li>
-                        <li>The Residence Committee, on recommendation by the Dean of Students, shall issue a formal ban to any unregistered club/society. The same ban shall apply to any club/ society formed on campus whose activities are considered not to be in the interest of the university.</li>
-                        The Clubs and Societies commission shall in all ensure that all Clubs shall be duly registered to be able to fully represent their interest to students and make them effective through enjoying the University facilities.
-
-                   </ol>
-                 </ol>
-                </div>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
-
-            </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
-          </div>
-        </section>
-
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
-
-
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Student's Academic Board</h1>
-                <p class="committee_description">
-                  The Students' Academic Board chaired by the Vice President of the SRC  is one of the prominent boards under the Students Representative Council (SRC)-KNUST.
-The  Academic Board sides with the University Academic Affairs in providing Academic support for students in their pursuit of academic excellence.
-The Board advises the Students Representative Council on all Academic matters affecting students.
-
-Also it is the responsibility of the board to conduct surveys on the nature of teaching, research and content of course, conduct of examination and the availability of books and equipment to students.
-
-They consequently enable students to understand regulations and procedures in ways to getting their academic needs met.
-
-The board provides opportunities for students to develop and enhance their academic skills by involving them in academic engagement activities, develop vacation training programs for students and supporting advocacy for students who may have personal in-class Academic issues.
-
-The board is organized in a way that provides support to the student body at the various Colleges,Faculties, Departments, and the Halls in terms of; Academic Guidance and Counseling, Tutorials, Academic Debate contests, Mentorship Schemes and Academic Workshops.
-The board looks forward to ensuring a conducive academic environment and also facilitating academic life on campus through its policies and plans.
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
-
-            </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
-          </div>
-        </section>
-
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Editorial Board</h1>
-                <div class="committee_description">
-                  There shall be an Editorial Board which shall be composed of:
                   <ol class="list-decimal list-inside">
-                    <li>The General Secretary of the SRC who shall be the chairperson of the Board.</li>
-                    <li>Editors of the various JCRs and Colleges
-                      KNUST SRC 2011 Constitution as amended (2021).
+                    <li>Members or promoters of a new club or society shall be required to obtain an application form
+                      from
+                      the Clubs and Societies Chairman of the SRC.</li>
+                    <li> The completed form shall be submitted to the Clubs and Societies Chairman, accompanied by three
+                      (3) copies of its Constitution and forwarded by the SRC to the Dean of Students to make necessary
+                      comments</li>
+                    <li>The Dean of Students shall vet the submitted application form and constitution and make
+                      recommendations to the Residence Committee.</li>
+                    <ul class="list-disc list-inside">
+                      <li>If the application is by a non-religious club or society, it shall be submitted to the
+                        Residence
+                        Committee by the Dean of Students for approval/recognition, after the vetting.</li>
+                      <li>If the application is by a Christian, religious club or society, it shall be submitted by the
+                        Dean of Students to the two (2) Chaplains i.e. Protestant and Catholic for their
+                        comments/recommendations.</li>
 
-                      One (1) representative each from GRASAG and ISA.
+                    </ul>
+                    The application shall then be returned to the Dean of Students for final submission to the Residence
+                    Committee for approval/recognition.Given the proliferation of religious groups on campus in our
+                    limited environment, it has been decided by the Residence Committee that any new religious group
+                    seeking recognition to operate on campus shall provide 500 signed-up members.
+                    In the case of Muslim groupings, the application shall be vetted by the KNUST Muslim Community
+                    Chairman before forwarding it to the Dean of Students.
+                    All college/faculty/department associations shall be given recognition by Residence Committee once
+                    the Dean of Students receives their endorsed documents by the appropriate head.
+
+                    <li>After approval of application by the Residence Committee, a certificate for commencement of
+                      activities shall formally be issued by the Dean of Students at a cost to be determined by the Dean
+                      of Students in consultation with the SRC every club/society shall renew its certificate of
+                      operation every 4 years.</li>
+
+                    <li>Every club/society shall laminate her certificate and have it available for inspection at every
+                      meeting.</li>
+                    <li>Every registered club or society, which collects or receives funds, shall submit an annual
+                      statement of audited account to the Office of the Dean of Students in accordance with the
+                      University Financial and Stores Regulations. Such reports should reach the Dean of Students not
+                      later than two weeks before the handing over of office or before new Executive Committee members
+                      takes over.
+                      The Dean of Students shall then hand over the accounts to the Internal Auditor who shall act as
+                      the external auditors for the clubs/societies. Failure to comply may lead to the withdrawal of
+                      certificate of recognition.</li>
+                    <li>The Residence Committee, on recommendation by the Dean of Students, shall issue a formal ban to
+                      any unregistered club/society. The same ban shall apply to any club/ society formed on campus
+                      whose activities are considered not to be in the interest of the university.</li>
+                    The Clubs and Societies commission shall in all ensure that all Clubs shall be duly registered to be
+                    able to fully represent their interest to students and make them effective through enjoying the
+                    University facilities.
+
+                  </ol>
+                </ol>
+              </div>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of Clubs and Societies Commission -->
+
+
+      <!-- Student's Academic Board -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Student's Academic Board</h1>
+              <p class="committee_description">
+                The Students' Academic Board chaired by the Vice President of the SRC is one of the prominent boards
+                under the Students Representative Council (SRC)-KNUST.
+                The Academic Board sides with the University Academic Affairs in providing Academic support for students
+                in their pursuit of academic excellence.
+                The Board advises the Students Representative Council on all Academic matters affecting students.
+
+                Also it is the responsibility of the board to conduct surveys on the nature of teaching, research and
+                content of course, conduct of examination and the availability of books and equipment to students.
+
+                They consequently enable students to understand regulations and procedures in ways to getting their
+                academic needs met.
+
+                The board provides opportunities for students to develop and enhance their academic skills by involving
+                them in academic engagement activities, develop vacation training programs for students and supporting
+                advocacy for students who may have personal in-class Academic issues.
+
+                The board is organized in a way that provides support to the student body at the various
+                Colleges,Faculties, Departments, and the Halls in terms of; Academic Guidance and Counseling, Tutorials,
+                Academic Debate contests, Mentorship Schemes and Academic Workshops.
+                The board looks forward to ensuring a conducive academic environment and also facilitating academic life
+                on campus through its policies and plans.
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of Student's Academic Board -->
+
+
+      <!-- Editorial Board -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Editorial Board</h1>
+              <div class="committee_description">
+                There shall be an Editorial Board which shall be composed of:
+                <ol class="list-decimal list-inside">
+                  <li>The General Secretary of the SRC who shall be the chairperson of the Board.</li>
+                  <li>Editors of the various JCRs and Colleges
+                    KNUST SRC 2011 Constitution as amended (2021).
+
+                    One (1) representative each from GRASAG and ISA.
 
                     The Editorial Board shall:
                     <ul class="list-disc list-inside">
                       <li>Be responsible for editing all SRC sponsored publications.</li>
-                      <li>Develop a newsletter for the SRC which shall be published periodically to inform students on the state of affairs of the SRC and on the general happenings in and around campus.</li>
-                      <li>Shall perform any other function as may be assigned to it by the Executive Council or Parliamentary Council.</li>
+                      <li>Develop a newsletter for the SRC which shall be published periodically to inform students on
+                        the state of affairs of the SRC and on the general happenings in and around campus.</li>
+                      <li>Shall perform any other function as may be assigned to it by the Executive Council or
+                        Parliamentary Council.</li>
                       <li>Shall work hand in hand with the SRC PRO on all matters of publicity.</li>
-                      <li>The General Secretary shall appoint a Deputy Editorial Board Chairperson from among the members of the Editorial Board and the person shall have all the full powers of a commissioner and represent the Board when the General Secretary is absent.
+                      <li>The General Secretary shall appoint a Deputy Editorial Board Chairperson from among the
+                        members of the Editorial Board and the person shall have all the full powers of a commissioner
+                        and represent the Board when the General Secretary is absent.
                       </li>
-                      <li>The General Secretary shall present the report on the state of the Editorial Board under the SRC to Parliamentary Council and in his absence the Deputy shall represent him.</li>
+                      <li>The General Secretary shall present the report on the state of the Editorial Board under the
+                        SRC to Parliamentary Council and in his absence the Deputy shall represent him.</li>
                     </ul>
-                    </li>
-                  </ol>
-                 
-                </div>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
-
-            </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
+                  </li>
+                </ol>
 
               </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
             </div>
+            <!-- END OF Welfare Commission -->
+
           </div>
-        </section>
 
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
-
-
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Finance Committee</h1>
-                <p class="committee_description">
-                  
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
 
             </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
           </div>
-        </section>
-
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
+        </div>
+      </section>
+      <!-- End of Editorial Board -->
 
 
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  External Relations Office</h1>
-                <p class="committee_description">
-                  
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
+      <!-- Finance Committee -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+          <!-- left side -->
+          <div class="tr-container">
 
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
               </div>
-              <!-- END OF Welfare Commission -->
+              <h1 class="committee_name">
+                Finance Committee</h1>
+              <p class="committee_description">
 
-            </div>
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
 
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
 
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
               </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
             </div>
+            <!-- END OF Welfare Commission -->
+
           </div>
-        </section>
 
-        <section class=" mt-20 top-10 relative  py-14 ">
-          <div class="flex gap-10  lg:flex-row flex-col">
-
-            <!-- left side -->
-            <div class="tr-container">
-
-              <!-- end of three dots -->
-
-
-              <!-- Entertainment Committee -->
-              <div class="mx-auto  relative">
-                <!-- 3 dots container -->
-                <div class="circles_container">
-                  <span class="three-dots bg-green-500"></span>
-                  <span class="three-dots bg-red-500"></span>
-                  <span class="three-dots bg-yellow-400"></span>
-                </div>
-                <h1 class="committee_name">
-                  Trade Technology and Innovation Developement Commission(TRATECH)
-                  </h1>
-                <p class="committee_description">
-                  In the face of rapidly growing economies and emerging markets coupled with tailored advancements in trade and technology worldwide over the past few years, the African continent has had the opportunity to mount the stage and rise as a force to reckon with on a worldwide threshold employing trade links and technological advancements as a springboard.
-
-The dream of the Student Representative Council (SRC) of KNUST to provide a ground on which ingenuity, creativity and innovations related to trade, technology and other disciplines are showcased primarily, and also create an avenue for building and enhancing problem solving capacity among students birthed the establishment of a trade and technology fair christened “TRATECH”. In pursuit of this dream, the year 2004 saw the launch of the maiden edition of TRATECH with the theme “SCIENTIFIC AND TECHNOLOGICAL ADVANCEMENT, AN INDISPENSABLE TOOL FOR SUSTAINABLE DEVELOPMENT”. Over the past few years, successive administrations of the council have made efforts to enhance this event, making it stronger, bigger and better and still being able to streamline and synchronise its core values and mission with its catchy themes.
-
-Succeeding in bringing creative people together, providing an umbrella for individuals to share interests and ideas and above all bringing industry players closer to students and strengthening their relationships leading to employment in certain cases are some of the giant feats TRATECH has achieved over the years. With themes like “Propelling Ghana to greater heights through science and technology” in 2011 and “Futuristic Impressions” for 2012 among a few others living up to the hype, TRATECH 2014 promises an unparalleled exhibition of all that it stands for in its entirety with decade of its inception. The theme “Green solutions through innovation-driven development” delivers a strong message aimed at addressing solutions to energy and environmental protection through innovative techniques to influence industrial growth and global development patterns. It does not look much of a demand for an event of such a calibre but outdoing itself seems to be a watchword for a long time running.
-
-“Technology is a gift from God. After the gift of life it is perhaps the greatest of God’s gifts. It is the mother of civilisation, arts and science” says Freeman Dyson. Trade and technology will forever be a driving force in economies, encouraging and promoting it is a sure way to unimaginable development.IT is the duty of the TRATECH to equip the average technocrat with a targeted trade and technological skills that lectures don’t have. Long live TRATECH, long live KNUST, and long live Mother Ghana.
-                </p>
-                <div class="committee_members_container ">
-                  <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
-                  </h4>
-
-                  <ul class=" text-gray-600 dark:text-gray-400 text-lg">
-
-                    <li class="committee_head">Bernard Yamoah</li>
-                    <li>Wade</li>
-                    <li>Joseph</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- END OF Welfare Commission -->
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
 
             </div>
-
-            <!-- Right side -->
-            <div class=" tl-container load-hidden">
-              <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
-                <img
-                  src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
-                  alt="legal affairs commission" class="src_executive_image">
-
-              </div>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
-              <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
-            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
           </div>
-        </section>
+        </div>
+      </section>
+      <!-- End of Finance Committee -->
 
 
-      </div>
+      <!-- External Relations Office -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
 
-   
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                External Relations Office</h1>
+              <p class="committee_description">
+
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of External Relations Office -->
+
+
+      <!--  Trade Technology and Innovation Developement Commission(TRATECH) -->
+      <section class=" mt-20 top-10 relative  py-14 ">
+        <div class="flex gap-10  lg:flex-row flex-col">
+
+          <!-- left side -->
+          <div class="tr-container">
+
+            <!-- end of three dots -->
+
+
+            <!-- Entertainment Committee -->
+            <div class="mx-auto  relative">
+              <!-- 3 dots container -->
+              <div class="circles_container">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
+              <h1 class="committee_name">
+                Trade Technology and Innovation Developement Commission(TRATECH)
+              </h1>
+              <p class="committee_description">
+                In the face of rapidly growing economies and emerging markets coupled with tailored advancements in
+                trade and technology worldwide over the past few years, the African continent has had the opportunity to
+                mount the stage and rise as a force to reckon with on a worldwide threshold employing trade links and
+                technological advancements as a springboard.
+
+                The dream of the Student Representative Council (SRC) of KNUST to provide a ground on which ingenuity,
+                creativity and innovations related to trade, technology and other disciplines are showcased primarily,
+                and also create an avenue for building and enhancing problem solving capacity among students birthed the
+                establishment of a trade and technology fair christened “TRATECH”. In pursuit of this dream, the year
+                2004 saw the launch of the maiden edition of TRATECH with the theme “SCIENTIFIC AND TECHNOLOGICAL
+                ADVANCEMENT, AN INDISPENSABLE TOOL FOR SUSTAINABLE DEVELOPMENT”. Over the past few years, successive
+                administrations of the council have made efforts to enhance this event, making it stronger, bigger and
+                better and still being able to streamline and synchronise its core values and mission with its catchy
+                themes.
+
+                Succeeding in bringing creative people together, providing an umbrella for individuals to share
+                interests and ideas and above all bringing industry players closer to students and strengthening their
+                relationships leading to employment in certain cases are some of the giant feats TRATECH has achieved
+                over the years. With themes like “Propelling Ghana to greater heights through science and technology” in
+                2011 and “Futuristic Impressions” for 2012 among a few others living up to the hype, TRATECH 2014
+                promises an unparalleled exhibition of all that it stands for in its entirety with decade of its
+                inception. The theme “Green solutions through innovation-driven development” delivers a strong message
+                aimed at addressing solutions to energy and environmental protection through innovative techniques to
+                influence industrial growth and global development patterns. It does not look much of a demand for an
+                event of such a calibre but outdoing itself seems to be a watchword for a long time running.
+
+                “Technology is a gift from God. After the gift of life it is perhaps the greatest of God’s gifts. It is
+                the mother of civilisation, arts and science” says Freeman Dyson. Trade and technology will forever be a
+                driving force in economies, encouraging and promoting it is a sure way to unimaginable development.IT is
+                the duty of the TRATECH to equip the average technocrat with a targeted trade and technological skills
+                that lectures don’t have. Long live TRATECH, long live KNUST, and long live Mother Ghana.
+              </p>
+              <div class="committee_members_container ">
+                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                </h4>
+
+                <ul class=" text-gray-600 dark:text-gray-400 text-lg">
+
+                  <li class="committee_head">Bernard Yamoah</li>
+                  <li>Wade</li>
+                  <li>Joseph</li>
+                </ul>
+              </div>
+            </div>
+            <!-- END OF Welfare Commission -->
+
+          </div>
+
+          <!-- Right side -->
+          <div class=" tl-container load-hidden">
+            <div class="relative overflow-hidden lg:shadow-2xl shadow-slate-800/40 ">
+              <img
+                src="https://assets.impactpool.org/cdn-cgi/image/width=750,quality=75,format=auto/contents/what-questions-were-asked-in-the-past-for-the-united-nations-ypp-legal-affairs-exam-e0abecb4-68cb-4c18-b9b3-3af1fd022e6f.jpeg"
+                alt="legal affairs commission" class="src_executive_image">
+
+            </div>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -right-10 absolute -top-10 "></span>
+            <span class="md:flex hidden h-3/5 w-2/6 bg-fuchsia-500 -z-10 -left-10 absolute -bottom-10 "></span>
+          </div>
+        </div>
+      </section>
+      <!-- End of  Trade Technology and Innovation Developement Commission(TRATECH) -->
+
+    </div>
+
+
 
   </main>
-  <script type="text/javascript">
-    let h = document.documentElement, b = document.body, st = "scrollTop", sh = "scrollHeight", progress = document.querySelector("#progress"), scroll; let scrollpos = window.scrollY; let header = document.getElementById("header"); let navcontent = document.getElementById("nav-content"); document.addEventListener("scroll", function () { scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100; progress.style.setProperty("--scroll", scroll + "%"); scrollpos = window.scrollY; if (scrollpos > 10) { header.classList.add("bg-white"); header.classList.add("shadow-xl"); navcontent.classList.remove("bg-gray-50"); navcontent.classList.add("bg-white") } else { header.classList.remove("bg-white"); header.classList.remove("shadow-xl"); navcontent.classList.remove("bg-white"); navcontent.classList.add("bg-gray-50") } });
+<!-------------------------------- End of Main section--------------------------- -->
 
+<!-------------------------------- Footer section --------------------------------->
+
+
+
+<footer class="footer">
+  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="£" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 "><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6"><i class="fa-solid fa-envelope"></i></a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+  </ul>
+</footer>
+
+
+
+
+<!-------------------------------- End of Footer section --------------------------------->
+  <script type="text/javascript">
+    let h = document.documentElement,
+      b = document.body,
+      st = "scrollTop",
+      sh = "scrollHeight",
+      progress = document.querySelector("#progress"),
+      scroll;
+    let scrollpos = window.scrollY;
+    let header = document.getElementById("header");
+    let navcontent = document.getElementById("nav-content");
+    document.addEventListener("scroll", function () {
+      scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+      progress.style.setProperty("--scroll", scroll + "%");
+      scrollpos = window.scrollY;
+      if (scrollpos > 10) {
+        header.classList.add("bg-white");
+        header.classList.add("shadow-xl");
+        navcontent.classList.remove("bg-gray-50");
+        navcontent.classList.add("bg-white")
+      } else {
+        header.classList.remove("bg-white");
+        header.classList.remove("shadow-xl");
+        navcontent.classList.remove("bg-white");
+        navcontent.classList.add("bg-gray-50")
+      }
+    });
   </script>
   <!-- dark mode -->
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+        '(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark')
@@ -1214,7 +1377,8 @@ Succeeding in bringing creative people together, providing an umbrella for indiv
     var themeToggleLightIcon1 = document.getElementById('theme-toggle-light-icon1');
 
     // Change the icons inside the button based on previous settings
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+        '(prefers-color-scheme: dark)').matches)) {
       themeToggleLightIcon1.classList.remove('hidden');
     } else {
       themeToggleDarkIcon1.classList.remove('hidden');
@@ -1254,10 +1418,12 @@ Succeeding in bringing creative people together, providing an umbrella for indiv
   <!-- Flowbite component -->
   <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-<script src="./../../static/js/main.js"></script>
-<script>
-  ScrollReveal().reveal('.commitee_description', { delay: 500 });
-</script>
+  <script src="./../../static/js/main.js"></script>
+  <script>
+    ScrollReveal().reveal('.commitee_description', {
+      delay: 500
+    });
+  </script>
   <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 
 </body>
