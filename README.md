@@ -25,3 +25,4 @@ videos icon <i class="fa-solid fa-video"></i>
 committees icon <i class="fa-solid fa-people-group"></i>
 executives icon <i class="fa-solid fa-user"></i>
 contact us <i class="fa-solid fa-messages"></i>
+calendar<i class="fa-solid fa-calendar-days"></i>

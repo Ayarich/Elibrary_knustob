@@ -112,10 +112,10 @@
    .footer{
     @apply md:mx-auto md:bottom-10 relative bottom-0 left-0 z-20 p-4 rounded-md md:max-w-4xl w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600
    }
+   
   }
 
-
-
+ 
 
 html,
 body {
