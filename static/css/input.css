@@ -1,10 +1,15 @@
+
+@import url(https://api.fontshare.com/v2/css?f[]=nunito@600,400&f[]=bebas-neue@400&display=swap);
+
+
 @tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
 @layer base{
   body{
-    @apply bg-white dark:bg-black duration-500
+    @apply bg-white dark:bg-gray-900 duration-500 font-body font-medium
   }
 }
 
@@ -13,6 +18,10 @@
 @layer components{
     .nav-link{
         @apply text-sm lg:text-base my-1  leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-300/5 rounded-md px-2 py-2 md:mx-4 flex items-center  md:my-0
+    }
+    /* text-slate-700 dark:text-slate-200 */
+    .theme_toggle{
+      @apply text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 mt-2 lg:mt-0
     }
     .sub-nav{
         @apply mx-4 text-sm lg:text-base leading-5 text-gray-700 transition-colors duration-200 transform dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400  flex  hover:border-b md:my-0 font-semibold text-opacity-80
@@ -36,23 +45,25 @@
       
   
     .src_nav_item{
-      @apply block space-x-1 py-2 pr-2 pl-2 text-slate-700 dark:text-slate-200 md:hover:bg-yellow-100/90 hover:text-yellow-700 hover:dark:text-yellow-700  hover:bg-yellow-100  rounded   md:p-0   md:px-2 md:py-1 font-bold duration-300 text-sm lg:text-[0.95rem]
+      @apply block space-x-1 py-2 pr-2 pl-2  md:hover:bg-amber-100 hover:text-amber-700 hover:dark:text-amber-700  hover:bg-amber-100  rounded   md:p-0   md:px-2 md:py-1 text-base duration-300  mt-2 md:mt-0 
+      text-gray-500 dark:text-gray-300
     }
     
      .src_executive_image{
       @apply aspect-square md:h-96  2xl:h-[30rem]  w-full object-cover object-center z-10 filter saturate-0 lg:shadow-xl shadow-gray-900 hover:saturate-100 duration-300
      }
      .executive_name{
-      @apply text-center md:text-5xl text-4xl  font-semibold tracking-wide transition-colors duration-500 text-gray-900 dark:text-white mb-4 md:text-right
+      @apply  md:text-5xl text-4xl  font-title tracking-widest transition-colors duration-500 text-gray-900 dark:text-white mb-4 text-left
+     }
+     .executive_position{
+      @apply text-sm font-semibold  font-body text-left  px-3 py-1.5  rounded-2xl block max-w-fit 
      }
      .src_heading_title{
-      @apply text-6xl md:text-6xl lg:text-7xl font-extrabold mt-0 mb-6 text-yellow-400 uppercase
+      @apply text-6xl md:text-6xl lg:text-7xl font-title font-semibold mt-0 mb-6 text-yellow-400 uppercase
      }
-     /* .notification_icon{
-      @apply inline-flex relative items-center p-2 text-sm text-gray-50 rounded-lg     focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600 hover:bg-yellow-50 hover:text-yellow-700 justify-between md:dark:hover:bg-transparent
-     } */
+
 .navbar{
-  @apply dark:bg-gray-900 bg-white fixed top-0 z-[50000] w-full
+  @apply dark:bg-gray-900 backdrop-blur-3xl bg-white fixed top-0 z-[50000] w-full shadow-md
 }
     .scroll_navbar_item{
       @apply  text-sm px-2 py-1 rounded leading-5 text-gray-700 transition-colors duration-300 transform dark:text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-500/20 md:my-0
@@ -60,6 +71,11 @@
     .navbar_home{
       @apply  font-bold text-gray-800 transition-colors duration-300 transform dark:text-white text-base hover:text-gray-700 dark:hover:text-gray-300 flex items-center
     }
+    .theme-text{
+      @apply md:hidden     text-sm  
+      text-gray-300 dark:text-gray-300
+    }
+    
     .line_right{
       @apply bg-emerald-500/90 absolute w-1/4 h-[.01rem] right-0
     }
@@ -67,10 +83,16 @@
       @apply bg-emerald-500/90 absolute w-1/4  h-[.01rem] left-0
     }
     .committee_description{
-      @apply text-gray-600 dark:text-gray-400 text-lg text-left md:text-left 
+      @apply  text-gray-600 dark:text-gray-400 text-base lg:text-lg text-left md:text-left 
+    }
+    .list-decimal{
+      @apply space-y-6
     }
     .committee_name{
-      @apply text-left md:text-5xl text-4xl  font-semibold tracking-wide transition-colors duration-500 text-gray-900 dark:text-white mb-4 md:text-left
+      @apply font-title text-left md:text-5xl text-4xl  font-semibold tracking-wide transition-colors duration-500 text-gray-900 dark:text-white mb-4 md:text-left
+    }
+    .member_heading{
+      @apply font-title font-medium text-amber-500 underline text-lg uppercase
     }
     .committee_members_container{
       @apply mt-10 flex flex-col text-left
@@ -83,7 +105,7 @@
     @apply  flex space-x-3 absolute mt-4 md:mt-0 -top-10
     }
     .tr-container{
-      @apply order-2 mb-20 lg:ml-0 w-full  lg:w-2/3 lg:pl-10 flex flex-col space-y-10 lg:items-end md:mt-16 lg:mt-0
+      @apply order-2 mb-20 lg:ml-0 w-full  lg:w-2/3 lg:pl-10 flex flex-col space-y-10  md:mt-16 lg:mt-0
     }
    .tl-container{
     @apply order-1 w-full lg:w-2/3 h-full relative
@@ -147,4 +169,33 @@ body::-webkit-scrollbar {
 /* utility */
 html.sr .load-hidden {
   visibility: hidden;
+}
+
+.theme-text{
+  width: 100%;
+  position: relative;
+height: 100%;
+  
+
+
+}
+
+html.dark .theme-text::before{
+  position: absolute;
+  content: ' Dark Mode';
+  color: white;
+  width: max-content; 
+  transform: translate(50%, -105%);
+  left: 0;
+}
+
+html .theme-text::before{
+  position: absolute;
+  content: ' Light Mode';
+  color: black;
+  width: max-content;
+
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -105%);
 }

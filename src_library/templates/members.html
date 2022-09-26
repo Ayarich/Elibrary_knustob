@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="../../static/src/output.css">
   <script src="../../static/js/darkmode.js" defer></script>
-  <script defer src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="https://kit.fontawesome.com/a04dfe1eb8.js" crossorigin="anonymous"></script>
   <style>
     html,
@@ -101,12 +101,14 @@
                   </div>
     
                  
-                  <div class="my-4 ">
-                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                      <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                      <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                  </button>
-                </div>
+                       <div class="my-4 border-t dark:border-gray-700 lg:border-none">
+              <button id="theme-toggle" type="button" class=" theme_toggle">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                <span class="theme-text"></span>
+            </button>
+          </div>
+
     
                  <!-- Search input on mobile screen -->
                  <div class="my-4 hidden">
@@ -200,13 +202,13 @@
 
 
   <main class="w-full    py-12 lg:py-24 ">
-    <div class="mx-auto max-w-6xl px-12 text-center">
+    <div class="mx-auto max-w-7xl px-12 text-center">
       <div class="space-y-12 md:text-center">
         <div class="mb-20 max-w-3xl space-y-5 sm:mx-auto sm:space-y-4">
-          <h2 class="relative text-4xl font-extrabold tracking-tight sm:text-5xl  text-emerald-400">
+          <h2 class=" font-title relative text-4xl font-extrabold tracking-tight sm:text-5xl  text-emerald-400">
             Meet our SRC Executives
           </h2>
-          <p class="text-xl text-gray-100">
+          <p class="text-xl dark:text-gray-400 font-body  ">
             We take pride in the people we work with. This is because we all
             collectively help each other become more awesome every day.
           </p>
@@ -222,20 +224,21 @@
 
             <!-- left side -->
             <div class="tr-container">
-              <!-- 3 dots container -->
-              <div class="flex space-x-3 ">
-                <span class="three-dots bg-green-500"></span>
-                <span class="three-dots bg-red-500"></span>
-                <span class="three-dots bg-yellow-400"></span>
-              </div>
+
               <!-- end of three dots -->
 
 
               <!-- Vision TEXT -->
-              <div class="mx-auto lg:ml-auto">
+              <div class="relative">
+                              <!-- 3 dots container -->
+              <div class="circles_container ">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
                 <h1 class="executive_name">
                   Joseph Adofo</h1>
-                <p class="lg:ml-auto max-w-lg text-sm md:text-base font-medium  font-serif text-center md:text-right  text-yellow-400"> SRC -General Secretary</p>
+                <span class="executive_position bg-yellow-50/90 text-yellow-600"> SRC - General Secretary</span>
               </div>
 
 
@@ -265,21 +268,22 @@
 
             <!-- left side -->
             <div class="tr-container">
-              <!-- 3 dots container -->
-              <div class="flex space-x-3 ">
-                <span class="three-dots bg-green-500"></span>
-                <span class="three-dots bg-red-500"></span>
-                <span class="three-dots bg-yellow-400"></span>
-              </div>
+            
               <!-- end of three dots -->
 
 
               <!-- Vision TEXT -->
-              <div class="mx-auto lg:ml-auto">
+              <div class="relative ">
+                  <!-- 3 dots container -->
+              <div class="circles_container ">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
                 <h1 class="executive_name">
                   Ebenezer Ayaaba</h1>
-                <p class="lg:ml-auto max-w-lg text-sm md:text-base font-medium text-sky-400 font-mono text-center md:text-right">Sports Commisioner
-                  </p>
+                <span class="executive_position bg-sky-50/90 text-sky-700 ">Sports Commisioner
+                  </span>
               </div>
 
 
@@ -309,21 +313,22 @@
 
             <!-- left side -->
             <div class="tr-container">
-              <!-- 3 dots container -->
-              <div class="flex space-x-3 ">
-                <span class="three-dots bg-green-500"></span>
-                <span class="three-dots bg-red-500"></span>
-                <span class="three-dots bg-yellow-400"></span>
-              </div>
+             
               <!-- end of three dots -->
 
 
               <!-- Vision TEXT -->
-              <div class="mx-auto lg:ml-auto">
+              <div class="relative">
+                 <!-- 3 dots container -->
+              <div class="circles_container ">
+                <span class="three-dots bg-green-500"></span>
+                <span class="three-dots bg-red-500"></span>
+                <span class="three-dots bg-yellow-400"></span>
+              </div>
                 <h1 class="executive_name">
                   Bernard Y. Yamoah</h1>
-                <p class="lg:ml-auto max-w-lg text-sm font-semibold text-fuchsia-500 font-mono text-center md:text-right"> SRC President, Obusi - Campus
-                </p>
+                <span class=" executive_position bg-fuchsia-50/90 text-fuchsia-700"> SRC President, Obuasi - Campus
+                </span>
               </div>
               <!-- END OF WELCOME TEXT -->
            
@@ -401,9 +406,10 @@
     });
   </script>
   <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
-  <script src="../../node_modules/flowbite/dist/flowbite.js"></script>
+ <script src="../../static/js/main.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
-  <script src="../../static/js/darkmode.js"></script>
+  <script defer src="../../static/js/darkmode.js"></script>
+
 </body>
 
 </html>

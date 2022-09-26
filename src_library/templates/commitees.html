@@ -63,9 +63,9 @@
           </div>
 
           <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-          <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-            class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-            <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 ">
+          <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 backdrop-blur-3xl ' : 'opacity-0 -translate-x-full ']"
+            class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900/95 lg:dark:bg-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+            <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 backdrop-blur-3xl ">
               <a class="src_nav_item" href="#">
                 <i class="fa-solid fa-house"></i>
                <span>Home</span>
@@ -89,21 +89,14 @@
             </div>
 
 
-            <div class="my-4 ">
-              <button id="theme-toggle" type="button"
-                class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
-              </button>
-            </div>
+                   <div class="my-4 border-t dark:border-gray-700 lg:border-none">
+              <button id="theme-toggle" type="button" class=" theme_toggle">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                <span class="theme-text"></span>
+            </button>
+          </div>
+
 
             <!-- Search input on mobile screen -->
             <div class="my-4 hidden">
@@ -210,9 +203,9 @@
       </div>
     
     <div class="mb-20 max-w-3xl space-y-5 sm:mx-auto sm:space-y-4">
-      <h1 class="md:text-5xl text-3xl lg:text-[3.5rem] font-extrabold tracking-wide relative sm:text-5xl  text-emerald-400">
+      <h1 class="committee_name  !text-emerald-400">
         Meet The Committees</h1>
-      <p class=" text-gray-600 dark:text-gray-100 text-base ">Lorem ipsum, dolor sit amet consectetur adipisicing
+      <p class=" committee_description">Lorem ipsum, dolor sit amet consectetur adipisicing
         elit. Sed, corrupti architecto. Corrupti, voluptate? Fugit quod at quia excepturi dolorem illum, quo
         labore odio praesentium expedita adipisci itaque earum laudantium sunt.</p>
     </div>
@@ -242,7 +235,7 @@
               <p class="committee_description">
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class="text-gray-600 dark:text-gray-400 text-lg">
@@ -332,7 +325,7 @@
                 </ol>
               </div>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class="text-gray-600 dark:text-gray-400 text-lg">
@@ -399,7 +392,7 @@
                 thus solely responsible for representing the SRC at all hearings at the judicial committee.
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class="text-gray-600 dark:text-gray-400 text-lg">
@@ -450,7 +443,7 @@
               <p class="committee_description">
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class="hidden text-gray-600 dark:text-gray-400 text-lg">
@@ -503,7 +496,7 @@
               <p class="committee_description">
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class="hidden text-gray-600 dark:text-gray-400 text-lg">
@@ -613,7 +606,7 @@
 
               </div>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -682,7 +675,7 @@
                 Transport Commissioner or any member of the transport
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -747,7 +740,7 @@
                 The Directorate is spearheaded by an Internship Director and three other deputies.
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -802,7 +795,7 @@
 
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -924,7 +917,7 @@
                 </ol>
               </div>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -999,7 +992,7 @@
                 on campus through its policies and plans.
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -1075,7 +1068,7 @@
 
               </div>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -1117,7 +1110,7 @@
 
 
             <!-- Entertainment Committee -->
-            <div class="mx-auto  relative">
+            <div class="relative">
               <!-- 3 dots container -->
               <div class="circles_container">
                 <span class="three-dots bg-green-500"></span>
@@ -1130,7 +1123,7 @@
 
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -1185,7 +1178,7 @@
 
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -1271,7 +1264,7 @@
                 that lectures don’t have. Long live TRATECH, long live KNUST, and long live Mother Ghana.
               </p>
               <div class="committee_members_container ">
-                <h4 class="font-mono font-medium text-gray-900 dark:text-white underline text-2xl uppercase">Members
+                <h4 class="member_heading">Members
                 </h4>
 
                 <ul class=" text-gray-600 dark:text-gray-400 text-lg">
@@ -1419,11 +1412,7 @@
   <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   <script src="./../../static/js/main.js"></script>
-  <script>
-    ScrollReveal().reveal('.commitee_description', {
-      delay: 500
-    });
-  </script>
+ 
   <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 
 </body>
