@@ -5,6 +5,10 @@ module.exports = {
     container: {
       center: true,
     },
+     fontFamily: {
+        body: ["Nunito", "sans-serif"],
+        title: ["Satoshi", "sans-serif"],
+      },
     extend: {},
   },
   plugins: [ require('flowbite/plugin')],

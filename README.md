@@ -7,7 +7,7 @@ npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch
 Or use ## *npm run build*
 
 ## For Scrolling animation, we are using ScrollReveal
-<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 ##  Also we are usng Alpine.js library to control the navbar
 <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
@@ -26,3 +26,19 @@ committees icon <i class="fa-solid fa-people-group"></i>
 executives icon <i class="fa-solid fa-user"></i>
 contact us <i class="fa-solid fa-messages"></i>
 calendar<i class="fa-solid fa-calendar-days"></i>
+<i class="fa-solid fa-calendar"></i>
+time icon <i class="fa-solid fa-clock"></i>
+
+
+## Font api
+<link href="https://api.fontshare.com/v2/css?f[]=erode@300,500,400&f[]=satoshi@900,700,300,901&display=swap" rel="stylesheet">
+font-family: 'Erode', serif; body-font
+font-family: 'Satoshi', sans-serif; heading font
+
+
+<link href="https://api.fontshare.com/v2/css?f[]=nunito@600,400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
+
+font-family: "Nunito", "sans-serif"; body-font
+font-family: "Bebas Neue", "sans-serif"; heading font
+
+## I Just tried the erode font and it's great next is nunito
