@@ -13,40 +13,18 @@
   <script src="../../static/js/darkmode.js" defer></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="https://kit.fontawesome.com/a04dfe1eb8.js" crossorigin="anonymous"></script>
-  <style>
-    html,
-    body {
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-      scrollbar-width: none;
-      -ms-overflow-style: none
-    }
 
-    body::-webkit-scrollbar {
-      display: none
-    }
 
-    ::-moz-selection {
-      color: white;
-      background: #10b981
-    }
-
-    ::selection {
-      color: white;
-      background: #10b981
-    }
-
-    .scroll-hidden::-webkit-scrollbar {
-      height: 0px;
-      background: transparent;
-      /* make scrollbar transparent */
-    }
-  </style>
-
-  <title>EXECUTIVES</title>
+  <title>SRC | EXECUTIVES</title>
 </head>
 
 <body>
+  <div class="wrapper">
+   
+    <div class="loader">
+    
+    </div>
+  </div>
   <!-- -------------------Nav Bar---------------------- -->
   <header class="h-screen">
     <nav x-data="{ isOpen: false }" class="navbar">
@@ -135,9 +113,7 @@
               <a class="scroll_navbar_item" href="#">Vue</a>
               <a class="scroll_navbar_item" href="#">React</a>
               <a class="scroll_navbar_item" href="#">Tailwindcss</a>
-              <a class="scroll_navbar_item" href="#">Meraki UI</a>
-              <a class="scroll_navbar_item" href="#">CPP</a>
-              <a class="scroll_navbar_item" href="#">JavaScript</a>
+             
              
           </div>
       </div>
@@ -169,10 +145,10 @@
 
       </div>
 
-      <div class="z-10 px-4 absolute top-0 right-0 bottom-0 left-0 w-full h-auto overflow-hidden bg-fixed"
+      <div class="z-10 md:px-4 absolute top-0 right-0 bottom-0 left-0 w-full h-auto overflow-hidden bg-fixed"
         style="background-color: rgba(0, 0, 0, 0.75)">
         <div class="container flex justify-center items-center h-full">
-          <div class="  text-center text-white px-6 md:px-12 flex items-center flex-col ">
+          <div class="  text-center text-white px-0 md:px-12 flex items-center flex-col ">
 
             <!-- KNUST SRC LOGO CONTAINER -->
             <div class="w-full justify-center flex items-center">
@@ -202,8 +178,8 @@
 
 
   <main class="w-full    py-12 lg:py-24 ">
-    <div class="mx-auto max-w-7xl px-12 text-center">
-      <div class="space-y-12 md:text-center">
+    <div class="mx-auto max-w-7xl md:px-12 text-center">
+      <div class="space-y-12 md:text-center px-4">
         <div class="mb-20 max-w-3xl space-y-5 sm:mx-auto sm:space-y-4">
           <h2 class=" font-title relative text-4xl font-extrabold tracking-tight sm:text-5xl  text-emerald-400">
             Meet our SRC Executives
@@ -238,7 +214,7 @@
               </div>
                 <h1 class="executive_name">
                   Joseph Adofo</h1>
-                <span class="executive_position bg-yellow-50/90 text-yellow-600"> SRC - General Secretary</span>
+                <span class="executive_position bg-yellow-500/10  text-yellow-400"> SRC - General Secretary</span>
               </div>
 
 
@@ -282,7 +258,7 @@
               </div>
                 <h1 class="executive_name">
                   Ebenezer Ayaaba</h1>
-                <span class="executive_position bg-sky-50/90 text-sky-700 ">Sports Commisioner
+                <span class="executive_position bg-sky-500/10 backdrop-blur-3xl text-sky-400 ">Sports Commisioner
                   </span>
               </div>
 
@@ -327,7 +303,7 @@
               </div>
                 <h1 class="executive_name">
                   Bernard Y. Yamoah</h1>
-                <span class=" executive_position bg-fuchsia-50/90 text-fuchsia-700"> SRC President, Obuasi - Campus
+                <span class=" executive_position bg-fuchsia-500/10  text-fuchsia-400"> SRC President, Obuasi - Campus
                 </span>
               </div>
               <!-- END OF WELCOME TEXT -->

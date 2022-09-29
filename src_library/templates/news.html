@@ -20,7 +20,14 @@
 <body>
   <!-- ----------------------------NAVBAR---------------------------- -->
   <header class="h-screen">
-
+    <div id="progress" class="h-1 z-[9999] m-0 top-0 relative" style="
+    background: linear-gradient(
+      to right,
+      #e4c308 var(--scroll),
+      transparent 0
+    );
+    ">
+        </div>
 
     <!-- Nav Bar-->
     <nav x-data="{ isOpen: false }" class="navbar">
@@ -38,7 +45,7 @@
             <div class="flex items-center">
               <a class="navbar_home" href="#">
                 <img src="../../static/img/src.png" class="mr-2 h-14 md:h-9" alt="KNUST OBUASI SRC Logo">
-                <span class="self-center whitespace-nowrap dark:text-white">E-NEWS</span></a>
+                <span class="self-center whitespace-nowrap dark:text-white">News</span></a>
 
 
             </div>
@@ -62,10 +69,10 @@
           </div>
 
           <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-          <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-            class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ">
-            <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 md:mr-5 ">
-           <a class="src_nav_item" href="#">
+          <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 backdrop-blur-3xl ' : 'opacity-0 -translate-x-full ']"
+            class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900/95 lg:dark:bg-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+            <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 backdrop-blur-3xl ">
+              <a class="src_nav_item" href="#">
                 <i class="fa-solid fa-house"></i>
                <span>Home</span>
               </a>
@@ -88,21 +95,14 @@
             </div>
 
 
-            <div class="my-4 ">
-              <button id="theme-toggle" type="button"
-                class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
-              </button>
-            </div>
+                   <div class="my-4 border-t dark:border-gray-700 lg:border-none">
+              <button id="theme-toggle" type="button" class=" theme_toggle">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                <span class="theme-text"></span>
+            </button>
+          </div>
+
 
             <!-- Search input on mobile screen -->
             <div class="my-4 hidden">
@@ -123,16 +123,8 @@
           </div>
         </div>
 
-        <div class="py-3 mt-3 md:mt-0 flex justify-center -mx-3 overflow-y-auto whitespace-nowrap scroll-hidden ">
-          <a class="scroll_navbar_item" href="#engineering">Engineering</a>
-          <a class="scroll_navbar_item" href="#business">Buiness</a>
-          <a class="scroll_navbar_item" href="#health_science">Health Sciences</a>
-
-
-        </div>
       </div>
     </nav>
-
     <div id="home" class=" relative h-full overflow-hidden bg-no-repeat bg-cover" style="
           background-position: 50%;
           background-image: url('../../static/img/obuasi..png');
@@ -172,7 +164,7 @@
 
             <!-- HERO TEXT -->
             <h3 class="text-lg md:text-2xl lg:text-3xl font-bold mb-4">KNUST</h3>
-            <h1 class="src_heading_title">E-NEWS</h1>
+            <h1 class="src_heading_title">News & Events</h1>
 
 
             <!-- CAMPUS TEXT CONTAINER -->
@@ -196,207 +188,35 @@
 
   </div>
   <main class="mt-20 flex flex-col gap-y-5 px-4 md:px-10  mb-10 space-y-44">
-
-   
-
-    <!-- Engineering Section -->
-    <section id="engineering" class=" program-section ">
-      <span 
-        class="px-3 py-1.5  text-xs rounded-md bg-amber-500 text-white font-bold uppercase tracking-wide">Engineering
-        Department</span>
-      <!-- Cards for Engineering Department Videos -->
-
-      <div class=" video-container-grid">
-
-        <div class="w-80 overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <!-- Card tag and image -->
-               <div class=" top-0 left-0 ">
-                <!-- Tag -->
-                   <div class=" text-xs p-[3px] absolute z-10 bg-gray-200 text-gray-900 text-end border rounded-br-md w-fit mr-0">
-                       Engineering
-                   </div>
-                   <img class="object-cover relative top-0 left-0 z-0 object-center aspect-square w-full h-44" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
-               </div>
+    
+    
+<!-- News card container -->
+      <div class=" news-container-grid">
+        <!-- News Card -->
+        <div class="news_card">
+            <!-- Card image -->
+              <img class="news_image" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
                <div class="px-4 pb-3   overflow-hidden  max-w-xs">
                    <div class="mt-3">
                     <!-- News Heading -->
-                       <a href="#" class="block mt-2 text-lg font-semibold text-gray-800 sm:text-base transition-colors duration-300 transform ">!SCHOOL ANNIVERSARY!!!</a>
-                       <p class="mt-1 text-sm text-gray-600 sm:text-xs ">
+                       <h1 class="news_title">SCHOOL ANNIVERSARY!!!</h1>
+                       <p class="news_description">
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. 
-                           </p>
+                        </p>
                    </div>
-                   <div class="mt-4">
-                       <div class="flex items-center justify-between">
-                           <div class="">
-                            <i class="fa-solid fa-calendar-days"></i>
-                           <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">15th October,2022</span>
-                           </div>
-                           <div class=" p-[2px] w-fit border rounded-md bg-blue-300">
-                               <i class="fa-solid fa-clock "></i>
-                               <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">2:30pm</span>
-                           </div>
-                             </div>
-                   </div>
+                   <!-- News link container -->
+                 <div class="mt-4">
+                  <!-- News link -->
+                  <a href="#" class="news-link">
+                    Read more
+                   </a>
+                 </div>
+                   
                </div>
-           </div>
-
-           <div class="w-80 overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <!-- Card tag and image -->
-               <div class=" top-0 left-0 ">
-                   <div class=" text-xs p-[3px] absolute z-10 bg-gray-200 text-gray-900 text-end border rounded-br-md w-fit mr-0">
-                       Engineering
-                   </div>
-                   <img class="object-cover relative top-0 left-0 z-0 object-center aspect-square w-full h-44" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
-               </div>
-               <div class="px-4 pb-3   overflow-hidden  max-w-xs">
-                   <div class="mt-3">
-                       <a href="#" class="block mt-2 text-lg font-semibold text-gray-800 sm:text-base transition-colors duration-300 transform ">!SCHOOL ANNIVERSARY!!!</a>
-                       <p class="mt-1 text-sm text-gray-600 sm:text-xs ">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. 
-                           </p>
-                   </div>
-                   <div class="mt-4">
-                       <div class="flex items-center justify-between">
-                           <div class="">
-                            <i class="fa-solid fa-calendar-days"></i>
-                           <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">15th October,2022</span>
-                           </div>
-                           <div class="">
-                               <i class="fa-solid fa-clock text-blue-700"></i>
-                               <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">2:30pm</span>
-                           </div>
-                             </div>
-                   </div>
-               </div>
-           </div>
-
-           <div class="w-80 overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <!-- Card tag and image -->
-               <div class=" top-0 left-0 ">
-                   <div class=" text-xs p-[3px] absolute z-10 bg-gray-200 text-gray-900 text-end border rounded-br-md w-fit mr-0">
-                       Engineering
-                   </div>
-                   <img class="object-cover relative top-0 left-0 z-0 object-center aspect-square w-full h-44" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
-               </div>
-               <div class="px-4 pb-3   overflow-hidden  max-w-xs">
-                   <div class="mt-3">
-                       <a href="#" class="block mt-2 text-lg font-semibold text-gray-800 sm:text-base transition-colors duration-300 transform ">!SCHOOL ANNIVERSARY!!!</a>
-                       <p class="mt-1 text-sm text-gray-600 sm:text-xs ">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. 
-                           </p>
-                   </div>
-                   <div class="mt-4">
-                       <div class="flex items-center justify-between">
-                           <div class="">
-                            <i class="fa-solid fa-calendar-days"></i>
-                           <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">15th October,2022</span>
-                           </div>
-                           <div class="">
-                               <i class="fa-solid fa-clock text-blue-700"></i>
-                               <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">2:30pm</span>
-                           </div>
-                             </div>
-                   </div>
-               </div>
-           </div>
-
-      </div>
-    </section>
-
-
-    <!-- Business Section -->
-    <section id="business" class=" program-section">
-      <span
-        class="px-3 py-1.5 mb-4 text-xs rounded-md bg-blue-500 text-white font-bold uppercase tracking-wide">Business</span>
-      <!-- Cards for Engineering Department Videos -->
-
-      <div class=" video-container-grid ">
-
-        <div class="w-80 overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <!-- Card tag and image -->
-               <div class=" top-0 left-0 ">
-                   <div class=" text-xs p-[3px] absolute z-10 bg-gray-200 text-gray-900 text-end border rounded-br-md w-fit mr-0">
-                       Engineering
-                   </div>
-                   <img class="object-cover relative top-0 left-0 z-0 object-center aspect-square w-full h-44" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
-               </div>
-               <div class="px-4 pb-3   overflow-hidden  max-w-xs">
-                   <div class="mt-3">
-                       <a href="#" class="block mt-2 text-lg font-semibold text-gray-800 sm:text-base transition-colors duration-300 transform ">!SCHOOL ANNIVERSARY!!!</a>
-                       <p class="mt-1 text-sm text-gray-600 sm:text-xs ">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. 
-                           </p>
-                   </div>
-                   <div class="mt-4">
-                       <div class="flex items-center justify-between">
-                           <div class="">
-                            <i class="fa-solid fa-calendar-days"></i>
-                           <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">15th October,2022</span>
-                           </div>
-                           <div class="">
-                               <i class="fa-solid fa-clock text-blue-700"></i>
-                               <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">2:30pm</span>
-                           </div>
-                             </div>
-                   </div>
-               </div>
-           </div>
-
+        </div>
 
 
       </div>
-
-
-
-    </section>
-
-
-
-    <!-- Health Sciences  -->
-    <section id="health_science" class=" program-section">
-      <span
-        class="px-3 py-1.5 mb-4 text-xs rounded-md bg-emerald-500 text-white font-bold uppercase tracking-wide ">Health
-        sciences</span>
-      <!-- Cards for Engineering Department Videos -->
-
-      <div class=" video-container-grid">
-
-        <div class="w-80 overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <!-- Card tag and image -->
-               <div class=" top-0 left-0 ">
-                   <div class=" text-xs p-[3px] absolute z-10 bg-gray-200 text-gray-900 text-end border rounded-br-md w-fit mr-0">
-                       Engineering
-                   </div>
-                   <img class="object-cover relative top-0 left-0 z-0 object-center aspect-square w-full h-44" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
-               </div>
-               <div class="px-4 pb-3   overflow-hidden  max-w-xs">
-                   <div class="mt-3">
-                       <a href="#" class="block mt-2 text-lg font-semibold text-gray-800 sm:text-base transition-colors duration-300 transform ">!SCHOOL ANNIVERSARY!!!</a>
-                       <p class="mt-1 text-sm text-gray-600 sm:text-xs ">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. 
-                           </p>
-                   </div>
-                   <div class="mt-4">
-                       <div class="flex items-center justify-between">
-                           <div class="">
-                            <i class="fa-solid fa-calendar-days"></i>
-                           <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">15th October,2022</span>
-                           </div>
-                           <div class="">
-                               <i class="fa-solid fa-clock text-blue-700"></i>
-                               <span class="mx-1 text-xs sm:text-[o.86rem] text-gray-600 ">2:30pm</span>
-                           </div>
-                             </div>
-                   </div>
-               </div>
-           </div>
-
-
-
-      </div>
-
-
-
     </section>
 
 

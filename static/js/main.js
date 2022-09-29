@@ -24,3 +24,10 @@ sr.reveal(`.executive_name, .executive_position`, {
 //   delay: 100,   reset: false
  
 // });
+
+const fadeOut=()=>{
+  const loaderWrapper = document.querySelector('.wrapper');
+  loaderWrapper.classList.add('fade');
+}
+
+window.addEventListener('load', fadeOut);

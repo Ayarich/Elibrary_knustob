@@ -6,7 +6,7 @@ module.exports = {
       center: true,
     },
      fontFamily: {
-        body: ["Nunito", "sans-serif"],
+        body: ["Erode", "serif"],
         title: ["Satoshi", "sans-serif"],
       },
     extend: {},

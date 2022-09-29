@@ -1,4 +1,5 @@
 
+@import url(https://api.fontshare.com/v2/css?f[]=erode@300,500,400&f[]=satoshi@900,700,300,901&display=swap);
 @import url(https://api.fontshare.com/v2/css?f[]=nunito@600,400&f[]=bebas-neue@400&display=swap);
 
 
@@ -56,10 +57,10 @@
       @apply  md:text-5xl text-4xl  font-title tracking-widest transition-colors duration-500 text-gray-900 dark:text-white mb-4 text-left
      }
      .executive_position{
-      @apply text-sm font-semibold  font-body text-left  px-3 py-1.5  rounded-2xl block max-w-fit 
+      @apply text-sm font-extrabold font-body text-left  px-3 py-1.5  rounded-2xl block max-w-fit 
      }
      .src_heading_title{
-      @apply text-6xl md:text-6xl lg:text-7xl font-title font-semibold mt-0 mb-6 text-yellow-400 uppercase
+      @apply text-4xl md:text-6xl lg:text-7xl font-title font-semibold mt-0 mb-6 text-yellow-400 uppercase
      }
 
 .navbar{
@@ -77,10 +78,10 @@
     }
     
     .line_right{
-      @apply bg-emerald-500/90 absolute w-1/4 h-[.01rem] right-0
+      @apply bg-emerald-500/90 absolute w-1/4 h-[.01rem] -right-4
     }
     .line_left{
-      @apply bg-emerald-500/90 absolute w-1/4  h-[.01rem] left-0
+      @apply bg-emerald-500/90 absolute w-1/4  h-[.01rem] -left-4
     }
     .committee_description{
       @apply  text-gray-600 dark:text-gray-400 text-base lg:text-lg text-left md:text-left 
@@ -113,7 +114,7 @@
    .program-section{
     @apply top-10 relative space-y-4 border-b-2 border-gray-200 dark:border-gray-800 pb-10 flex justify-center flex-col items-center
    }
-   .video-container-grid{
+   .video-container-grid, .news-container-grid{
     @apply grid grid-cols-1 place-items-center gap-10 items-center md:grid-cols-2 lg:grid-cols-3 
    }
    .video-card-container{ @apply max-w-sm rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
@@ -128,11 +129,26 @@
    .video-card-description{
     @apply font-normal text-gray-700 dark:text-gray-400 hidden
    }
+   .news_card{
+    @apply max-w-xs overflow-hidden bg-gray-100 rounded-lg shadow-md dark:bg-gray-800
+   }
+   .news_title{
+    @apply  mt-2 text-xl font-semibold sm:text-base  text-amber-400 font-title
+   }
+   .news_description{
+    @apply mt-1 text-base text-gray-600  dark:text-gray-300 truncate
+   }
    .mobile-menu-menu{
     @apply border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center 
    }
    .footer{
     @apply md:mx-auto md:bottom-10 relative bottom-0 left-0 z-20 p-4 rounded-md md:max-w-4xl w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600
+   }
+   .news-link{
+    @apply rounded-md uppercase tracking-wider bg-yellow-400 w-full inline-block text-center text-white py-2 hover:bg-yellow-500 duration-300 transition-colors focus:bg-emerald-500 focus:ring-4 ring-emerald-600 
+   }
+   .news_image{
+    @apply object-cover relative top-0 left-0  object-center aspect-video w-full h-44
    }
    
   }
@@ -198,4 +214,114 @@ html .theme-text::before{
   top: 50%;
   left: 0;
   transform: translate(50%, -105%);
+}
+.wrapper{
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  transition: opacity .25s, visibility 1s;
+}
+.fade{
+  opacity: 0;
+  visibility: hidden;
+}
+.loader{
+  width: 150px;
+  height: 150px;
+  border-top: 4px solid rgb(177, 151, 4);
+  border-radius: 50%;
+  animation: rotate .5s linear  infinite ;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+.card{
+  position:relative;
+  width:23rem;
+  height:25rem;
+
+  color:#074057;
+  background-size:cover;
+  background-position:center;
+  overflow:hidden;
+  border-radius:20px;
+
+}
+.card__content{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:20px;
+
+  border-top-left-radius:20px;
+  transform:translateY(0px) ;
+  transition:transform 5s ease-in;
+  z-index:1;
+}
+
+
+
+.card__title{
+  font-size:1.2rem;
+  font-weight:700;
+
+  color:#022b47;
+}
+
+.card:hover .card__content{
+ 
+  top:0;
+}
+
+.card:hover .card__description{
+display:block;
+  transition-delay:0.1s;
 }
