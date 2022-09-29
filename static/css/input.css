@@ -130,13 +130,13 @@
     @apply font-normal text-gray-700 dark:text-gray-400 hidden
    }
    .news_card{
-    @apply max-w-xs overflow-hidden bg-gray-100 rounded-lg shadow-md dark:bg-gray-800
+    @apply max-w-[18rem] overflow-hidden bg-gray-100 rounded-lg shadow-md dark:bg-gray-800
    }
    .news_title{
-    @apply  mt-2 text-xl font-semibold sm:text-base  text-amber-400 font-title
+    @apply  mt-2 text-lg md:text-xl  font-semibold sm:text-base  text-amber-400 font-title
    }
    .news_description{
-    @apply mt-1 text-base text-gray-600  dark:text-gray-300 truncate
+    @apply mt-1 text-xs md:text-base text-gray-600  dark:text-gray-300 truncate
    }
    .mobile-menu-menu{
     @apply border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center 
@@ -145,7 +145,7 @@
     @apply md:mx-auto md:bottom-10 relative bottom-0 left-0 z-20 p-4 rounded-md md:max-w-4xl w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600
    }
    .news-link{
-    @apply rounded-md uppercase tracking-wider bg-yellow-400 w-full inline-block text-center text-white py-2 hover:bg-yellow-500 duration-300 transition-colors focus:bg-emerald-500 focus:ring-4 ring-emerald-600 
+    @apply inline-flex items-center justify-center rounded-md font-title  px-4 py-1.5 font-semibold text-white transition hover:bg-yellow-500 bg-yellow-400 text-center w-full lg:w-fit focus:bg-emerald-500 
    }
    .news_image{
     @apply object-cover relative top-0 left-0  object-center aspect-video w-full h-44
@@ -198,7 +198,7 @@ height: 100%;
 
 html.dark .theme-text::before{
   position: absolute;
-  content: ' Dark Mode';
+  content: ' Light Mode';
   color: white;
   width: max-content; 
   transform: translate(50%, -105%);
@@ -207,7 +207,7 @@ html.dark .theme-text::before{
 
 html .theme-text::before{
   position: absolute;
-  content: ' Light Mode';
+  content: ' Dark Mode';
   color: black;
   width: max-content;
 
