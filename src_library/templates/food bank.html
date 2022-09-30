@@ -18,6 +18,12 @@
 </head>
 
 <body>
+  <div class="wrapper ">
+    <div class="relative flex w-36 h-36 items-center justify-center">
+      <img src="../../static/img/src-logo.jpg" alt="" class="animate-bounce w-10 h-10 rounded-full">
+      <div class="loader absolute w-full h-full "></div>
+    </div>
+    </div>
   <!-- ----------------------------NAVBAR---------------------------- -->
   <header class="h-screen">
    
@@ -63,30 +69,30 @@
 
           <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
           <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 backdrop-blur-3xl ' : 'opacity-0 -translate-x-full ']"
-            class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900/95 lg:dark:bg-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+            class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:dark:bg-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
             <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 backdrop-blur-3xl ">
               <a class="src_nav_item" href="#">
                 <i class="fa-solid fa-house"></i>
-               <span>Home</span>
+               <span class="nav-icon-text">Home</span>
               </a>
               <a class="src_nav_item" href="#">
-                <i class="fa-solid fa-user"></i>
-                <span>Executives</span>
+                <i class="fa-solid fa-address-card"></i>
+                <span class="nav-icon-text">About</span>
               </a>
-              <a class="src_nav_item" href="#">
-                <i class="fa-solid fa-people-group"></i><span>Committees</span>
-                </a>
               <a class="src_nav_item" href="#"><i class="fa-solid fa-newspaper"></i>
-              <span>News</span>
+              <span class="nav-icon-text">News</span>
               </a>
               <a class="src_nav_item" href="#"><i class="fa-solid fa-book"></i>
-              <span>Library</span>
+                <span class="nav-icon-text">Library</span>
               </a>
               <a class="src_nav_item" href="#"><i class="fa-solid fa-message"></i>
-              <span>Contact Us</span>
-              </a>
+              <span class="nav-icon-text">Contact Us</span>
+            </a>
+            <a class="src_nav_item" href="#">
+              <i class="fa-solid fa-folder"></i>
+              <span class="nav-icon-text">Resources</span>
+            </a>
             </div>
-
 
                    <div class="my-4 border-t dark:border-gray-700 lg:border-none">
               <button id="theme-toggle" type="button" class=" theme_toggle">
@@ -156,13 +162,13 @@
             <!--  END OF  KNUST SRC LOGO CONTAINER -->
 
             <!-- HERO TEXT -->
-            <h3 class="text-lg md:text-2xl lg:text-3xl font-bold mb-4">KNUST</h3>
+            <h3 class="knust-text">KNUST</h3>
             <h1 class="src_heading_title">SRC - FOOD BANK</h1>
 
 
             <!-- CAMPUS TEXT CONTAINER -->
             <div class="relative   mt-2 w-full flex justify-center items-center">
-              <h3 class="text-base tracking-wider p-3 md:p-0 md:text-lg lg:text-xl font-thin z-10  text-white">OBUASI
+              <h3 class="obuasi-text">OBUASI
                 CAMPUS</h3>
               <span class="line_left"></span>
               <span class="line_right"></span>

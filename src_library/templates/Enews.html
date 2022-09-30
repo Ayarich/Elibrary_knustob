@@ -14,12 +14,12 @@
 </head>
 
 <body >
-  <div class="wrapper">
-   
-    <div class="loader">
-    
+  <div class="wrapper ">
+    <div class="relative flex w-36 h-36 items-center justify-center">
+      <img src="../../static/img/src-logo.jpg" alt="" class="animate-bounce w-10 h-10 rounded-full">
+      <div class="loader absolute w-full h-full "></div>
     </div>
-  </div>
+    </div>
   <header class="h-screen relative ">
     <nav x-data="{ isOpen: false }" class="navbar">
       <div id="progress" class="h-1 z-[9999] m-0 top-0 relative" style="
@@ -57,28 +57,29 @@ background: linear-gradient(
     
               <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
               <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="border lg:border-none dark:border-slate-800 border-slate-300  absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white top-16 dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ">
-                  <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 md:mr-5 ">
-                 <a class="src_nav_item" href="#">
-                <i class="fa-solid fa-house"></i>
-               <span>Home</span>
-              </a>
-              <a class="src_nav_item" href="#">
-                <i class="fa-solid fa-user"></i>
-                <span>Executives</span>
-              </a>
-              <a class="src_nav_item" href="#">
-                <i class="fa-solid fa-people-group"></i><span>Committees</span>
+                <div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 backdrop-blur-3xl ">
+                  <a class="src_nav_item" href="#">
+                    <i class="fa-solid fa-house"></i>
+                   <span class="nav-icon-text">Home</span>
+                  </a>
+                  <a class="src_nav_item" href="#">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span class="nav-icon-text">About</span>
+                  </a>
+                  <a class="src_nav_item" href="#"><i class="fa-solid fa-newspaper"></i>
+                  <span class="nav-icon-text">News</span>
+                  </a>
+                  <a class="src_nav_item" href="#"><i class="fa-solid fa-book"></i>
+                    <span class="nav-icon-text">Library</span>
+                  </a>
+                  <a class="src_nav_item" href="#"><i class="fa-solid fa-message"></i>
+                  <span class="nav-icon-text">Contact Us</span>
                 </a>
-              <a class="src_nav_item" href="#"><i class="fa-solid fa-newspaper"></i>
-              <span>News</span>
-              </a>
-              <a class="src_nav_item" href="#"><i class="fa-solid fa-book"></i>
-              <span>Library</span>
-              </a>
-              <a class="src_nav_item" href="#"><i class="fa-solid fa-message"></i>
-              <span>Contact Us</span>
-              </a>
-                  </div>
+                <a class="src_nav_item" href="#">
+                  <i class="fa-solid fa-folder"></i>
+                  <span class="nav-icon-text">Resources</span>
+                </a>
+                </div>
     
                  
                         <div class="my-4 border-t dark:border-gray-700 lg:border-none">
@@ -90,39 +91,11 @@ background: linear-gradient(
           </div>
 
     
-                 <!-- Search input on mobile screen -->
-                 <div class="my-4 hidden">
-                  <div class="relative">
-                      <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                          <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                              <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                      </span>
-    
-                      <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search">
-                  </div>
-              </div>
+               
               </div>
           </div>
     
-          <div class="py-3 mt-3 md:mt-0 -mx-3 overflow-y-auto whitespace-nowrap scroll-hidden hidden">
-              <a class="scroll_navbar_item" href="#">News</a>
-              <a class="scroll_navbar_item" href="#">Articles</a>
-              <a class="scroll_navbar_item" href="#">Videos</a>
-              <a class="scroll_navbar_item" href="#">Tricks</a>
-              <a class="scroll_navbar_item" href="#">PHP</a>
-              <a class="scroll_navbar_item" href="#">Laravel</a>
-              <a class="scroll_navbar_item" href="#">Vue</a>
-              <a class="scroll_navbar_item" href="#">React</a>
-              <a class="scroll_navbar_item" href="#">Tailwindcss</a>
-              <a class="scroll_navbar_item" href="#">Meraki UI</a>
-              <a class="scroll_navbar_item" href="#">CPP</a>
-              <a class="scroll_navbar_item" href="#">JavaScript</a>
-              <a class="scroll_navbar_item" href="#">Ruby</a>
-              <a class="scroll_navbar_item" href="#">Mysql</a>
-              <a class="scroll_navbar_item" href="#">Pest</a>
-           
-          </div>
+         
       </div>
     </nav>
    
@@ -174,13 +147,13 @@ background: linear-gradient(
            <!--  END OF  KNUST SRC LOGO CONTAINER -->
   
            <!-- HERO TEXT -->
-            <h3 class="text-lg md:text-2xl lg:text-3xl font-bold font-mono mb-4">KNUST</h3>
+            <h3 class="knust-text">KNUST</h3>
             <h1 class="src_heading_title">STUDENTS' <br> REPRESENTATIVE COUNCIL</h1>
            
   
               <!-- CAMPUS TEXT CONTAINER -->
             <div class="relative   mt-2 w-full flex justify-center items-center">
-              <h3 class="text-base  p-3 md:p-0 md:text-lg lg:text-xl font-thin z-10  text-white">OBUASI CAMPUS</h3>
+              <h3 class="obuasi-text">OBUASI CAMPUS</h3>
               <span class="line_left"></span>
               <span class="line_right"></span>
             </div>

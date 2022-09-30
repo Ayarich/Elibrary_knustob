@@ -28,6 +28,9 @@ contact us <i class="fa-solid fa-messages"></i>
 calendar<i class="fa-solid fa-calendar-days"></i>
 <i class="fa-solid fa-calendar"></i>
 time icon <i class="fa-solid fa-clock"></i>
+tools <i class="fa-solid fa-toolbox"></i>
+<i class="fa-solid fa-rectangle-history"></i>
+Download icon -  <i class="fa-solid fa-download"></i>
 
 
 ## Font api
@@ -57,3 +60,31 @@ font-family: "Bebas Neue", "sans-serif"; heading font
   email -
   instagram -
   youtube - 
+
+
+<!-- Nav bar menu  -->
+<div class="flex flex-col lg:flex-row lg:mx-1 lg:space-x-5 lg:mr-5 backdrop-blur-3xl ">
+              <a class="src_nav_item" href="#">
+                <i class="fa-solid fa-house"></i>
+               <span class="nav-icon-text">Home</span>
+              </a>
+              <a class="src_nav_item" href="#">
+                <i class="fa-solid fa-address-card"></i>
+                <span class="nav-icon-text">About</span>
+              </a>
+              <a class="src_nav_item" href="#"><i class="fa-solid fa-newspaper"></i>
+              <span class="nav-icon-text">News</span>
+              </a>
+              <a class="src_nav_item" href="#"><i class="fa-solid fa-book"></i>
+                <span class="nav-icon-text">Library</span>
+              </a>
+              <a class="src_nav_item" href="#"><i class="fa-solid fa-message"></i>
+              <span class="nav-icon-text">Contact Us</span>
+            </a>
+            <a class="src_nav_item" href="#">
+              <i class="fa-solid fa-folder"></i>
+              <span class="nav-icon-text">Resources</span>
+            </a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"></svg>
